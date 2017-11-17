@@ -16,7 +16,7 @@
   </head>
   <body>
     <div class=main>
-      <div id=screen-store class=screen>
+      <div id=screen-1 class=screen>
         <h1>Bob's Shoe Store</h1>
 
         <div class=badge>
@@ -33,6 +33,9 @@
           <div class=badge--text>
             from <strong>154</strong> verified reviews
           </div>
+          <hr>
+          Your purchase is 100% guaranteed. <a href="#">Learn more</a>
+          <hr>
           <div class=badge--verify>
             <img src="assets/img/powered-by-verify.svg">
           </div>
@@ -46,9 +49,37 @@
           <div class=item--price>$250</div>
         </div><!-- ./item -->
 
-        <input type=button id=add-to-cart value="Add to Cart">
+        <button data-balloon="Click here to get started" data-balloon-pos="right" data-balloon-visible onClick="switchScreen(2);">Add to Cart</button>
+      </div><!-- #screen-1 -->
+
+      <div id=screen-2 class=screen>
+        <h1>Your items</h1>
+        <div class=item>
+          <div class=item--image>
+            <img src="assets/img/nike.png">
+          </div>
+          <div class=item--title>Nike Air</div>
+          <div class=item--price>$250</div>
+        </div>
+
+        <h2>Shipping Details</h2>
+        <form>
+          <input type=text placeholder="your@email.com">
+          <input type=text placeholder="Address">
+          <input type=text placeholder="Apt, Room">
+          <input type=text placeholder="ZIP" value="12345">
+          <input type=text placeholder="Country" value="United States">
+
+          <button data-balloon="Let's pay with crypto!" data-balloon-pos="right" data-balloon-visible onClick="switchScreen(3);">Pay with Crypto</button>
+          <img src="assets/img/powered-by-verify.svg">
+        </form>
+      </div><!-- #screen-2 -->
+
+      <div id=screen-3 class=screen>
+        
       </div>
-    </div>
+
+    </div><!-- ./main -->
 
     <script src="assets/components/jquery/jquery.min.js"></script>
     <script src="assets/js/scripts.min.js"></script>

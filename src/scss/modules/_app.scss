@@ -1,3 +1,11 @@
+.screen {
+  display: none;
+
+  &:first-of-type {
+    display: block;
+  }
+}
+
 .item {
   border: 1px solid #ccc;
   width: 160px;
