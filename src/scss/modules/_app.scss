@@ -1,9 +1,9 @@
 .screen {
   display: none;
 
-  &:first-of-type {
-    display: block;
-  }
+  // &:first-of-type {
+  //   display: block;
+  // }
 }
 
 .item {
@@ -39,4 +39,21 @@
     margin: 10px 0 3px 0;
     text-align: center;
   }
+}
+
+.shipping--powered-by img {
+  width: 150px;
+}
+
+.checkout--header {
+  background: linear-gradient(to right, #00846b, #004d47);
+  text-align: center;
+
+  img {
+    width: 150px;
+  }
+}
+
+.checkout--rating img {
+  width: 20px;
 }

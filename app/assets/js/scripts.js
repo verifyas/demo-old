@@ -19,7 +19,9 @@
     $('#screen-' + currentScreen).fadeOut(function(){
       $('#screen-' + n).fadeIn();
       currentScreen = n;
-    })
+    });
+
+    return false; /* prevent form submissions */
   }
 
 })(jQuery, window, document);

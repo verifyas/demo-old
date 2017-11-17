@@ -70,13 +70,72 @@
           <input type=text placeholder="ZIP" value="12345">
           <input type=text placeholder="Country" value="United States">
 
-          <button data-balloon="Let's pay with crypto!" data-balloon-pos="right" data-balloon-visible onClick="switchScreen(3);">Pay with Crypto</button>
-          <img src="assets/img/powered-by-verify.svg">
+          <button data-balloon="Let's pay with crypto!" data-balloon-pos="right" data-balloon-visible onClick="return switchScreen(3);">Pay with Crypto</button>
+          <div class=shipping--powered-by>
+            <img src="assets/img/powered-by-verify.svg">
+          </div>
         </form>
       </div><!-- #screen-2 -->
 
       <div id=screen-3 class=screen>
-        
+        <div class=checkout--header>
+          <img src="assets/img/verify.svg">
+        </div>
+        <div class=checkout--body>
+          <h2>Bob's Shoe Store</h2>
+          <div class=checkout--rating>
+            <img src="assets/img/star-on.svg">
+            <img src="assets/img/star-on.svg">
+            <img src="assets/img/star-on.svg">
+            <img src="assets/img/star-on.svg">
+            <img src="assets/img/star-on.svg">
+            from <strong>154</strong> reviews
+          </div>
+          <hr>
+          Your order details:
+          <div class=item>
+            <div class=item--image>
+              <img src="assets/img/nike.png">
+            </div>
+            <div class=item--title>Nike Air</div>
+            <div class=item--price>$250</div>
+            - Condition: New
+          </div>
+
+          <div class=delivery>
+            Delivery by <strong>Monday, Dec 20</strong><br>
+            FREE returns: <strong>Shipper pays</strong> return shipping charges.
+          </div>
+          <div class=protection>
+            100% protection against:
+            <ul>
+              <li>Late delivery</li>
+              <li>Damaged / defective product</li>
+              <li>Inaccurately described product</li>
+              <li>Fake / non-genuine products</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="checkout--payment">
+            Pay with &hellip;
+            <a href="#" onClick="switchScreen(4)"  data-balloon="Let's pay with Bitcoin, shall we?" data-balloon-pos="right" data-balloon-visible>
+              <img src="assets/img/btc.svg">
+            </a>
+          </div>
+        </div>
+      </div><!-- #screen-3 -->
+
+      <div id=screen-4 class=screen style="display: block;">
+        This purchase is 100% protected<br>
+        You are paying with <img src="assets/img/btc.svg"><strong>Bitcoin</strong> <a href="#">(Change)</a>
+        <hr>
+        Transfer <strong>0.2 BTC</strong> to:
+        <img src="assets/img/qr-code.svg">
+        Rate: 1 BTC = $7,150
+        <hr>
+        <div data-balloon="For demo purposes, we'll automatically redirect to success page in 5 seconds" data-balloon-pos="top" data-balloon-visible>
+          Status: Waiting for payment&hellip;
+        </div>
       </div>
 
     </div><!-- ./main -->

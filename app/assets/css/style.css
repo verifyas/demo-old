@@ -20,8 +20,7 @@ body {
   color: #444; }
 
 body, html {
-  min-height: 100vh;
-  overflow: hidden; }
+  min-height: 100vh; }
 
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -430,8 +429,6 @@ textarea {
 
 .screen {
   display: none; }
-  .screen:first-of-type {
-    display: block; }
 
 .item {
   border: 1px solid #ccc;
@@ -456,6 +453,18 @@ textarea {
     max-width: 90%;
     margin: 10px 0 3px 0;
     text-align: center; }
+
+.shipping--powered-by img {
+  width: 150px; }
+
+.checkout--header {
+  background: linear-gradient(to right, #00846b, #004d47);
+  text-align: center; }
+  .checkout--header img {
+    width: 150px; }
+
+.checkout--rating img {
+  width: 20px; }
 
 @media print {
   * {
