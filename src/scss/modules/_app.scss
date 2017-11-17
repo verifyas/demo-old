@@ -2,11 +2,33 @@
   border: 1px solid #ccc;
   width: 160px;
   padding: 5px;
-  
+
   .item--title {
     font-weight: bold;
   }
   .item--image img {
     max-width: 150px;
+  }
+}
+
+.badge {
+  border: 1px solid #ccc;
+  width: 160px;
+  float: right;
+  padding: 5px;
+  text-align: center;
+
+  .badge--title {
+    font-size: 1.4em;
+  }
+
+  .badge--rating img {
+    width: 25px;
+  }
+
+  .badge--verify img {
+    max-width: 90%;
+    margin: 10px 0 3px 0;
+    text-align: center;
   }
 }
