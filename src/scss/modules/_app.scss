@@ -1,9 +1,9 @@
 .screen {
   display: none;
 
-  // &:first-of-type {
-  //   display: block;
-  // }
+  &:first-of-type {
+    display: block;
+  }
 }
 
 .item {

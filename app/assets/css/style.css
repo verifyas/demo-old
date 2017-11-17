@@ -429,6 +429,8 @@ textarea {
 
 .screen {
   display: none; }
+  .screen:first-of-type {
+    display: block; }
 
 .item {
   border: 1px solid #ccc;

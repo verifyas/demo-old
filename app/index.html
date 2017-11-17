@@ -125,7 +125,7 @@
         </div>
       </div><!-- #screen-3 -->
 
-      <div id=screen-4 class=screen style="display: block;">
+      <div id=screen-4 class=screen>
         This purchase is 100% protected<br>
         You are paying with <img src="assets/img/btc.svg"><strong>Bitcoin</strong> <a href="#">(Change)</a>
         <hr>
@@ -133,8 +133,25 @@
         <img src="assets/img/qr-code.svg">
         Rate: 1 BTC = $7,150
         <hr>
-        <div data-balloon="For demo purposes, we'll automatically redirect to success page in 5 seconds" data-balloon-pos="top" data-balloon-visible>
+        <div data-balloon="For demo purposes, we'll automatically redirect to success page in 5 seconds" data-balloon-pos="top" data-balloon-visible onClick="return switchScreen(5);">
           Status: Waiting for payment&hellip;
+        </div>
+      </div><!-- #screen-4 -->
+
+      <div id=screen-5 class=screen>
+        <h1>Order Complete!</h1>
+        <div class=item>
+          <div class=item--image>
+            <img src="assets/img/nike.png">
+          </div>
+          <div class=item--title>Nike Air</div>
+          <div class=item--price>$250</div>
+          - Condition: New
+        </div>
+        <p>We've sent a confirmation email to <strong>your@email.com</strong> with your order details and a link to your order tracking page.</p>
+        <p>Please keep this email. You will need it if you need to inquire about the order status, or to file a dispute</p>
+        <div class=shipping--powered-by>
+          <img src="assets/img/powered-by-verify.svg">
         </div>
       </div>
 
