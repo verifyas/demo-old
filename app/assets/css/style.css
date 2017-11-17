@@ -13,13 +13,11 @@
   text-rendering: optimizeLegibility; }
 
 html {
-  font-size: 62.5%;
-  background: radial-gradient(ellipse at center, #F7F6F0 0, #c2ba8c 80%, #b0a66b 100%); }
+  font-size: 62.5%; }
 
 body {
   font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
-  color: #444;
-  transition: all .4s .3s ease-in; }
+  color: #444; }
 
 body, html {
   min-height: 100vh;
@@ -400,6 +398,9 @@ textarea {
 .nav ul {
   list-style: none; }
 
+.main {
+  margin: 0 1em; }
+
 @font-face {
   font-family: 'Font-Name';
   src: url("../fonts/font-name.eot");
@@ -426,6 +427,15 @@ textarea {
   background: #333;
   color: #fff;
   text-shadow: none; }
+
+.item {
+  border: 1px solid #ccc;
+  width: 160px;
+  padding: 5px; }
+  .item .item--title {
+    font-weight: bold; }
+  .item .item--image img {
+    max-width: 150px; }
 
 @media print {
   * {

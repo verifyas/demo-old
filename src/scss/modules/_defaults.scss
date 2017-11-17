@@ -5,12 +5,10 @@
 }
 html {
   font-size: 62.5%;
-  background: radial-gradient(ellipse at center, $base 0, $darken 80%, $back 100%);
 }
 body {
   font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
   color: #444;
-  transition: all .4s .3s ease-in;
 }
 body,html{
 	min-height: 100vh;

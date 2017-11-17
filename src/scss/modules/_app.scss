@@ -1,0 +1,12 @@
+.item {
+  border: 1px solid #ccc;
+  width: 160px;
+  padding: 5px;
+  
+  .item--title {
+    font-weight: bold;
+  }
+  .item--image img {
+    max-width: 150px;
+  }
+}
