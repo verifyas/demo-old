@@ -20,6 +20,9 @@
 	}
 
 	&-success, &--success{
+		background-color: $color-notification-success-bright;
+		color: $color-notification-success;
+		padding-left: 6rem;
 	}
 
 	&-info, &--info{
@@ -32,6 +35,16 @@
 		margin-right: 1rem;
 		position: absolute;
 		left: 1.5rem;
+
+		.check-wrapper{
+			background-color: $color-notification-success;
+			width: 3rem;
+    		height: 3rem;
+    		margin-right: 1rem;
+    		border-radius: 50%;
+    		line-height: 3.7rem;
+    		text-align: center;
+		}
 	}
 
 	&__title{
@@ -50,4 +63,22 @@
 	.alert-heading:last-child {
 		margin-bottom: 0;
 	}
+}
+
+.check-wrapper{
+	text-align: center;
+	margin-top: 1rem;
+	img{
+	    background-color: #447f6a;
+	    width: 3rem;
+	    height: 3rem;
+	    margin-right: 1rem;
+	    border-radius: 50%;
+	    padding: 0.85rem;
+		vertical-align: middle;
+	}
+	.section-title{
+		display: inline-block;
+	}
+
 }

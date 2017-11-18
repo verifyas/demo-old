@@ -11,7 +11,13 @@
     $('#screen-' + currentScreen).fadeOut(function(){
       $('#screen-' + n).fadeIn();
       currentScreen = n;
+      // Remove Badge Block from checkout screens
+      if(currentScreen >= 3 ){
+        $('#verifyBadge').fadeOut();
+      }          
     });
+
+
 
     return false; /* prevent form submissions */
   }

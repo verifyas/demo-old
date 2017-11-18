@@ -21,7 +21,7 @@
   <body>
 
   	<!-- Badge -->
-	<div class=badge>
+	<div class=badge id="verifyBadge">
 		<div class=badge__title>
 			Bob's Shoe Store
 		</div>
@@ -126,13 +126,15 @@
 
 				<div class="column is-4">
 			        <h2 class="section-title">Your items</h2>
-			        <div class=item>
-			          <div class=item--image>
-			            <img src="assets/img/nike.png">
-			          </div>
-			          <div class=item--title>Nike Air</div>
-			          <div class=item--price>$250</div>
-			        </div>					
+			        <div class="item item--cart">
+				          <div class=item__image>
+				            <img src="assets/img/nike.png">
+				          </div>
+				          <div class=item__title>Nike Air</div>
+				          <div class=item__price>$250</div>
+				          <div class="item__condition">- Condition: New</div>
+				    </div>
+					
 				</div> 
 
 				<div class="column is-6">
@@ -204,14 +206,14 @@
 			          </div>
 			          <hr>
 			          <h5 class="seondary-section-title">Your order details:</h5>
-			          <div class=item>
-			            <div class=item--image>
-			              <img src="assets/img/nike.png">
-			            </div>
-			            <div class=item--title>Nike Air</div>
-			            <div class=item--price>$250</div>
-			            - Condition: New
-			          </div>
+				        <div class="item item--cart">
+				          <div class=item__image>
+				            <img src="assets/img/nike.png">
+				          </div>
+				          <div class=item__title>Nike Air</div>
+				          <div class=item__price>$250</div>
+				          <div class="item__condition">- Condition: New</div>
+				        </div>
 
 			          <div class=delivery>
 			            <img src="assets/img/delivery.svg">Delivery by <strong>Monday, Dec 20</strong><br>
@@ -329,32 +331,45 @@
       </div><!-- #screen-4 -->
 
       <div id=screen-5 class=screen>
-      	<div class="container">
-      		
-      		<div class="columns">
+        <div class=checkout-header>
+          <img src="assets/img/verify.svg">
+        </div>
 
-      			<div class="column is8">
-      				
-			        <h2 class="section-tite">Order Complete!</h2>
-			        <div class=item>
-			          <div class=item--image>
-			            <img src="assets/img/nike.png">
-			          </div>
-			          <div class=item--title>Nike Air</div>
-			          <div class=item--price>$250</div>
-			          - Condition: New
-			        </div>
-			        <p>We've sent a confirmation email to <strong>your@email.com</strong> with your order details and a link to your order tracking page.</p>
-			        <p>Please keep this email. You will need it if you need to inquire about the order status, or to file a dispute</p>
-			        <div class=shipping--powered-by>
-			          <img src="assets/img/powered-by-verify.svg">
-			        </div> 
+      	<div class="checkout-complete">
+      		<div class="container">
+      		
+	      		<div class="columns">
+
+	      			<div class="column is-half is-offset-one-quarter">
+				        		<div class="check-wrapper">
+				        			<img src="assets/img/check.svg" alt="">
+				        			<h2 class="section-title">Payment Complete</h2>
+				        		</div>
+
+	      				
+					       <p>We've sent a confirmation email to <strong>your@email.com</strong> with your order details and a link to your 	order tracking page.<br>
+					        Please keep this email. You will need it if you need to inquire about the order status, or to file a dispute	
+					    	</p>
+						<hr>
+					    <h4 class="seondary-section-title">Order Summary </h4>			        		
+				        <div class="item item--cart">
+				          <div class=item__image>
+				            <img src="assets/img/nike.png">
+				          </div>
+				          <div class=item__title>Nike Air</div>
+				          <div class=item__price>$250</div>
+				          <div class="item__condition">- Condition: New</div>
+				        </div>
+				        <div class=shipping--powered-by>
+				          <img src="assets/img/powered-by-verify.svg">
+				        </div> 
+	      			</div>
+
+
       			</div>
 
 
       		</div>
-
-
       	</div>
 
       </div>

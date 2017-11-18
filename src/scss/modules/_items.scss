@@ -35,3 +35,37 @@
 		margin: 0;
 	}
 }
+
+.item{
+	border: 1px solid $color-bg-light1;
+	overflow: hidden;
+	&--cart{
+		width: 100%;
+
+	}
+
+	&__title{
+		font-size: 1rem;
+		font-weight: bold;
+		margin-bottom: 0.25rem;
+	}
+
+	&__image{
+		img{
+			width: 5rem;
+			margin-right: 1rem;
+			float: left;
+		}
+	}
+
+	&__price{
+		color: $color-secondary-base;
+		margin-bottom: 0.25rem;
+	}
+
+	&__condition{
+		color: $color-typography3;
+		font-size: 0.85rem;
+	}
+
+}

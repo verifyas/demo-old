@@ -2181,6 +2181,9 @@ label {
 .bitcoin-payment {
   margin-top: 2rem; }
 
+.checkout-complete {
+  margin-top: 2rem; }
+
 .item-image img {
   width: 95%; }
 
@@ -2208,6 +2211,26 @@ label {
 .item-desc__info {
   margin: 0; }
 
+.item {
+  border: 1px solid #F5F5F5;
+  overflow: hidden; }
+  .item--cart {
+    width: 100%; }
+  .item__title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem; }
+  .item__image img {
+    width: 5rem;
+    margin-right: 1rem;
+    float: left; }
+  .item__price {
+    color: #E74C3C;
+    margin-bottom: 0.25rem; }
+  .item__condition {
+    color: #D3D4D8;
+    font-size: 0.85rem; }
+
 .alert {
   background-color: #F5F5F5;
   padding: 0.75rem 1.25rem;
@@ -2222,6 +2245,10 @@ label {
     border-radius: 0.5rem;
     padding-left: 5rem;
     line-height: 1.5; }
+  .alert-success, .alert--success {
+    background-color: #E7F5F1;
+    color: #447F6A;
+    padding-left: 6rem; }
   .alert-info, .alert--info {
     color: #19B5FE;
     background-color: #F1FBFF; }
@@ -2229,6 +2256,14 @@ label {
     margin-right: 1rem;
     position: absolute;
     left: 1.5rem; }
+    .alert__icon .check-wrapper {
+      background-color: #447F6A;
+      width: 3rem;
+      height: 3rem;
+      margin-right: 1rem;
+      border-radius: 50%;
+      line-height: 3.7rem;
+      text-align: center; }
   .alert__title {
     margin: 0;
     margin-bottom: 0.5rem;
@@ -2239,6 +2274,20 @@ label {
     margin: 0; }
   .alert .alert-heading:last-child {
     margin-bottom: 0; }
+
+.check-wrapper {
+  text-align: center;
+  margin-top: 1rem; }
+  .check-wrapper img {
+    background-color: #447f6a;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    padding: 0.85rem;
+    vertical-align: middle; }
+  .check-wrapper .section-title {
+    display: inline-block; }
 
 @media print {
   * {
