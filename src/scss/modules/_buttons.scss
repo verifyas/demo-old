@@ -1,0 +1,95 @@
+.btn{
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 0.3px;
+
+	// Default Style
+	@include lineargradient(#FFFFFF,#F8F8F8);
+	border: 1px solid $color-bg-light2;
+	color: $color-typography2;
+	height: 2.5rem;
+	border-radius: 2px;
+	line-height: 2.5rem;
+	padding: 0 2rem;
+	transition: box-shadow 0.2s ease, color 0.2s ease, background 0.2s;
+	font-size: 0.875rem;
+
+	&:hover:enabled,&:focus:enabled{
+		color: $color-primary-base;
+		box-shadow: 0 0 4px rgba($color-bg-light2, 0.5);
+		outline: 0;
+	}
+
+	&:disabled{
+		opacity: 0.4;
+	}
+
+	&:active{
+		@include lineargradient(#f8f8f8, #ffffff);
+	}
+
+	// Primary Button
+	&.btn-primary, &.btn--primary {
+		color: #ffffff;
+		background: $color-primary-base;
+		border: 0;
+
+		&:hover:enabled, &:focus:enabled{
+	  		background-color: darken($color-primary-base, 5%) ;
+	  		color: #ffffff;
+		}
+
+		&:active:enabled{
+			background-color: darken($color-primary-base, 15%) ;
+		}
+
+	}
+  
+	// CTA Button
+	&.btn-cta, .btn--cta{
+		background: $color-secondary-base;
+		border: 0;
+		color: #fff;
+
+	&:hover:enabled, &:focus:enabled{
+		background-color: darken($color-secondary-base, 5%);
+		color: #ffffff;
+	}
+
+	&:active:enabled{
+		background-color: darken($color-secondary-base, 15%);
+	}
+
+  }
+
+
+  
+	// Sizes
+
+	// Large Buttons
+ 	&.btn-lg, &.btn--lg{
+		height: 3rem;
+		line-height: 3rem;
+		padding: 0 2.5rem;
+		font-size: 1rem;
+  	}
+
+	// Small Button
+	&.btn-sm, &.btn--sm{
+		padding: 0 1.25rem;
+	}
+
+	// Xtra Small
+	&.btn-xs, &.btn--xs{
+		height: 2.25rem;
+		line-height: 2.25rem;
+		padding: 0 1rem;
+	}
+
+	// Full Block
+	&.btn-block, &.btn--block{
+		width: 100%;
+		padding: 0;
+	}
+
+}

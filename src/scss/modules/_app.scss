@@ -20,21 +20,43 @@
 }
 
 .badge {
-  border: 1px solid #ccc;
+  border: 1px solid $color-bg-light1;
   width: 160px;
-  float: right;
-  padding: 5px;
+  //float: right;
+  padding: 0.75rem;
   text-align: center;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 100;
+  background: #ffffff;
+  box-shadow: 0 0 2px $color-bg-light2;
 
-  .badge--title {
-    font-size: 1.4em;
+  &__title {
+    font-size: 1rem;
+    font-family: $font-serif;
+    letter-spacing: -0.5px; 
+    color: $color-typography1;   
+    margin-bottom: 0.25rem;
   }
 
-  .badge--rating img {
-    width: 25px;
+  &__text{
+    font-size: 0.75rem;
+    color: $color-typography2;
+
+    hr{
+      border: 0;
+      border-bottom: 1px solid $color-bg-light1;
+      outline: 0;
+      margin: 0.5rem 0;
+    }
   }
 
-  .badge--verify img {
+  &__rating img {
+    width: 1rem;
+  }
+
+  &__verify img {
     max-width: 90%;
     margin: 10px 0 3px 0;
     text-align: center;

@@ -1,0 +1,93 @@
+body{
+  font-family: $font-sans;
+  color: $color-typography1 ;
+  margin: 0;
+  font-size: $fontSize-p;
+  background-color: #ffffff;
+}
+  
+html,
+button,
+input,
+select,
+textarea {
+  //@extend body;
+}
+
+section{
+  background-color: #ffffff;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: $font-sans;
+}
+h1{
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: $color-typography1;
+    margin-bottom: 1.5rem;
+}
+h2{
+    font-size: 1.25rem;
+    line-height: 1.666666;
+    color: $color-typography1;
+    margin-bottom: 1.25rem;
+}
+h3{
+    font-size: 1.25rem;
+    line-height: 1.6666666;
+    color: $color-typography1;
+}
+
+p{
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+a{
+  color: $color-primary-base ;
+
+  &:hover, &:focus,&:active{
+    text-decoration: underline;
+    color: $color-primary-base ;
+  }
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1rem;
+
+    .title{
+      //text-transform: uppercase;
+      color: $color-typography2;
+      //font-weight: bold;
+      border-right: 0;
+    }
+
+    .desc{
+      border-left: 0;
+      text-align: right;
+      color: $color-typography1;
+    }
+
+}
+table, th, td {
+    border: 1px solid $color-bg-light1;
+    padding: 0.75rem;
+    font-size: 0.75rem;
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+

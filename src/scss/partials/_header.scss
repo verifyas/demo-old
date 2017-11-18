@@ -1,6 +1,36 @@
-.header {
+.main-header {
+	height: 4rem;
+	//background: $color-bg-bright3;
+	box-shadow: 0 1px 2px  lighten($color-bg-light2, 5);	
+	margin-bottom: 1rem;
+	line-height: 4rem;
+	padding: 0 2rem;
+	position: absolute;
+	width: 100%;
 
+	.columns{
+		height: 100%;
+		align-items: center;
+		margin: 0;
+	}
+
+	h1{
+		margin: 0;
+		font-size: 1rem;
+		font-family: $font-serif;
+		letter-spacing: -0.5px;
+		a{
+			color: $color-typography1;
+			
+			&:hover{
+				text-decoration: none;
+				color: $color-typography2;
+			}
+		}
+	}
 }
+
+
 .logo {
   margin: -58px 0 0 -100px;
   @include position(absolute, 50% 0 0 50%);

@@ -1,4 +1,13 @@
 //----------------------------------*\
+// VENDOR
+//----------------------------------*/
+
+@import 'vendor/_external.scss';
+@import '../../node_modules/bulma/sass/utilities/_all.sass';
+@import '../../node_modules/bulma/sass/grid/columns.sass';
+@import "../../node_modules/bulma/sass/elements/container.sass";
+
+//----------------------------------*\
 // SCSS MIXINS
 //----------------------------------*/
 
@@ -17,6 +26,7 @@
 // PARTIALS
 //----------------------------------*/
 
+@import 'partials/_global.scss';
 @import 'partials/_header.scss';
 @import 'partials/_nav.scss';
 @import 'partials/_sidebar.scss';
@@ -33,13 +43,9 @@
 @import 'modules/_typography.scss';
 @import 'modules/_misc.scss';
 @import 'modules/_app.scss';
+@import 'modules/items.scss';
 
 // Enhancement modules
 @import 'modules/_breakpoints.scss';
 @import 'modules/_print.scss';
 
-//----------------------------------*\
-// VENDOR
-//----------------------------------*/
-
-@import 'vendor/_external.scss';

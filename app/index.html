@@ -12,44 +12,111 @@
     <link href="//ajax.googleapis.com" rel="dns-prefetch">
     <link href="assets/css/style.min.css" rel="stylesheet">
 
+    <!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600|Playfair+Display" rel="stylesheet">    
+
+
     <script src="assets/components/modernizr/modernizr.js"></script>
   </head>
   <body>
+
+  	<!-- Badge -->
+	<div class=badge>
+		<div class=badge__title>
+			Bob's Shoe Store
+		</div>
+		<div class=badge__rating>
+			<img src="assets/img/star-on.svg">
+			<img src="assets/img/star-on.svg">
+			<img src="assets/img/star-on.svg">
+			<img src="assets/img/star-on.svg">
+			<img src="assets/img/star-on.svg">
+		</div>
+		<div class=badge__text>
+			from <strong>154</strong> verified reviews
+			<hr>
+			Your purchase is 100% guaranteed. <a href="#">Learn more</a>
+			<hr>
+		</div>
+
+		<div class=badge__verify>
+			<img src="assets/img/powered-by-verify.svg">
+		</div>
+	</div>
+
+	<div class="main-header">
+		<div class="columns">
+			<div class="column">
+				<h1><a href="/">Bob's Shoe Store</a></h1>						
+			</div>
+			<div class="column">
+				
+			</div>
+		</div>
+	</div>
+
     <div class=main>
+
+  	        
+
       <div id=screen-1 class=screen>
-        <h1>Bob's Shoe Store</h1>
 
-        <div class=badge>
-          <div class=badge--title>
-            Bob's Shoe Store
-          </div>
-          <div class=badge--rating>
-            <img src="assets/img/star-on.svg">
-            <img src="assets/img/star-on.svg">
-            <img src="assets/img/star-on.svg">
-            <img src="assets/img/star-on.svg">
-            <img src="assets/img/star-on.svg">
-          </div>
-          <div class=badge--text>
-            from <strong>154</strong> verified reviews
-          </div>
-          <hr>
-          Your purchase is 100% guaranteed. <a href="#">Learn more</a>
-          <hr>
-          <div class=badge--verify>
-            <img src="assets/img/powered-by-verify.svg">
-          </div>
-        </div>
 
-        <div class=item>
-          <div class=item--image>
-            <img src="assets/img/nike.png">
-          </div>
-          <div class=item--title>Nike Air</div>
-          <div class=item--price>$250</div>
-        </div><!-- ./item -->
 
-        <button data-balloon="Click here to get started" data-balloon-pos="right" data-balloon-visible onClick="switchScreen(2);">Add to Cart</button>
+
+        <div class="container">
+		
+			<div class="columns">
+
+				<!-- Image Column -->
+				<div class="column is-6">
+					<div class="item-image">
+			            <img src="assets/img/nike.png">					
+					</div>
+				</div>
+
+
+				<!-- Description Column -->
+				<div class="column is-4">
+					<div class="item-desc">
+						<h5 class="item-desc__category">Shoes </h5>
+	          			<h2 class="item-desc__title">Nike Air</h2>
+	          			<h4 class="item-desc__price">$250</h4>
+	          			<p class="item-desc__info">
+							The legend lives on in the Nike Air Force 1 High ’07 Men's Shoe, a modern take on the icon that blends classic style and fresh, crisp details.
+							<table>
+								<tr>
+									<td class="title">
+										Shown
+									</td>
+									<td class="desc">
+										University Red/White/Team Red
+									</td>
+								</tr>
+
+								<tr>
+									<td class="title">
+										Style
+									</td>
+									<td class="desc">
+										315121-610
+									</td>
+								</tr>
+			
+							</table>
+	          			</p>					
+					    <button data-balloon="Click here to get started" data-balloon-pos="right" data-balloon-visible onClick="switchScreen(2);" class="btn btn--primary item-desc__btn">Add to Cart</button>          			
+					</div>
+				</div>
+
+
+			</div>
+
+		</div>
+
+
+
+
       </div><!-- #screen-1 -->
 
       <div id=screen-2 class=screen>
@@ -156,6 +223,12 @@
       </div>
 
     </div><!-- ./main -->
+
+    <footer class="main-footer">
+    	<p class="main-footer__text">
+    		An E-Commerce demo site presenting how Verify works, © all copyrights goes to Verify
+    	</p>
+    </footer>
 
     <script src="assets/components/jquery/jquery.min.js"></script>
     <script src="assets/js/scripts.min.js"></script>

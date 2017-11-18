@@ -3,13 +3,6 @@
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
-html {
-  font-size: 62.5%;
-}
-body {
-  font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
-  color: #444;
-}
-body,html{
+html,body{
 	min-height: 100vh;
 }

@@ -1,0 +1,37 @@
+// Single Item Design
+.item-image{
+	img{
+		width: 95%;
+	}
+}
+
+.item-desc{
+
+	&__title{
+		margin: 0;
+		margin-bottom: 0.5rem;
+		color: $color-typography1;
+		font-size: 2rem;
+		line-height: 1.3;
+	}
+
+	&__category{
+		margin: 0;
+		text-transform: uppercase;
+		color: $color-typography3;
+		font-size: 0.75rem;
+	    margin-bottom: 0.125rem;
+    	margin-top: 1rem;
+    	letter-spacing: 1px;		
+	}
+
+	&__price{
+		margin: 0;
+		color: $color-secondary-base ;
+		margin-bottom: 1.5rem;
+	}
+
+	&__info{
+		margin: 0;
+	}
+}

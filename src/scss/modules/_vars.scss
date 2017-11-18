@@ -1,3 +1,65 @@
 $base : #F7F6F0;
 $darken : darken(#F7F6F0 , 30%);
 $back: darken(#F7F6F0, 40%);
+// Colors Variables 
+
+// BrightColors
+$color-bg-light1:						#F5F5F5;
+$color-bg-light2:						#D3D4D8;
+$color-bg-light3:						#F9FAFA;
+$color-bg-light4:						#ECE9E9;
+
+// DarkColors
+$color-bg-dark1:						#8493A8;
+$color-bg-dark2:       					#465A77;
+$color-bg-dark3:   						#2B3749;
+
+// Typography Colors
+$color-typography1:						#293137;
+$color-typography2:						#545D63;
+$color-typography3:						#D3D4D8;
+
+
+// Primary Colors
+$color-primary-base :   				#4183D7;
+
+// Secondary Colors
+$color-secondary-base:	 				#E74C3C;
+
+// Notifications Colors
+$color-notification-danger: 			#E13A3A;
+$color-notification-danger-bright:		#FEEEF0;
+$color-notification-warning:			#F9D294;
+$color-notification-warning-bright: 	#FEFAF3;
+$color-notification-success: 			#447F6A;
+$color-notification-success-bright: 	#E7F5F1;
+$color-notification-info:				#19B5FE;
+$color-notification-info-brigth:		#F1FBFF;
+
+// Spacing Variables 
+$spacing-base-number: 					4px ;
+
+
+
+//
+$font-sans:    "Nunito", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-serif:	'Playfair Display', serif;
+// Line-Height
+
+$line-height-h1:  40px;
+$line-height-h2:  28px;
+$line-height-h3:  24px; 
+$line-height-h4:  24px;
+$line-height-h5:  20px;
+$line-height-h6:  20px;
+$line-height-p:   24px;
+
+
+// Sizes
+$fontSize-h1:     24px;
+$fontSize-h2:     20px;
+$fontSize-h3:     18px;
+$fontSize-h4:     18px;
+$fontSize-h5:     14px;
+$fontSize-h6:     13px;
+$fontSize-p:      16px;
