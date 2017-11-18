@@ -89,3 +89,20 @@
 .checkout-body{
   margin-top: 4rem;
 }
+
+.delivery{
+  padding-left: 1.5rem;
+  position: relative;
+  margin-top: 1rem;
+  img{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+  }
+}
+
+.bitcoin-payment{
+  margin-top: 2rem;
+}

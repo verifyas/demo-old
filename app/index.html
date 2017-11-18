@@ -193,17 +193,17 @@
 	        	<div class="columns">
 	        		
 	        		<div class="column is-4">
-			          <h2>Bob's Shoe Store</h2>
+			          <h2 class="logo-title">Bob's Shoe Store</h2>
 			          <div class=checkout--rating>
 			            <img src="assets/img/star-on.svg">
 			            <img src="assets/img/star-on.svg">
 			            <img src="assets/img/star-on.svg">
 			            <img src="assets/img/star-on.svg">
 			            <img src="assets/img/star-on.svg">
-			            from <strong>154</strong> reviews
+			            <p class="logo-desc">from <strong>154</strong> reviews</p>
 			          </div>
 			          <hr>
-			          Your order details:
+			          <h5 class="seondary-section-title">Your order details:</h5>
 			          <div class=item>
 			            <div class=item--image>
 			              <img src="assets/img/nike.png">
@@ -214,7 +214,7 @@
 			          </div>
 
 			          <div class=delivery>
-			            Delivery by <strong>Monday, Dec 20</strong><br>
+			            <img src="assets/img/delivery.svg">Delivery by <strong>Monday, Dec 20</strong><br>
 			            FREE returns: <strong>Shipper pays</strong> return shipping charges.
 			          </div>	        			
 	        		</div>
@@ -266,8 +266,12 @@
 
 
 			          <hr>
-			          <div class=protection>
-			            100% protection against:
+
+			          <div class="alert alert--small protection">
+			          	<div class="alert__icon">
+							<img src="assets/img/window_security.svg" alt="">
+			        	</div>
+			            <h5 class="alert__title">100% protection against:</h5>
 			            <ul>
 			              <li>Late delivery</li>
 			              <li>Damaged / defective product</li>
@@ -288,33 +292,71 @@
       </div><!-- #screen-3 -->
 
       <div id=screen-4 class=screen>
-        This purchase is 100% protected<br>
-        You are paying with <img src="assets/img/btc.svg"><strong>Bitcoin</strong> <a href="#">(Change)</a>
-        <hr>
-        Transfer <strong>0.2 BTC</strong> to:
-        <img src="assets/img/qr-code.svg">
-        Rate: 1 BTC = $7,150
-        <hr>
-        <div data-balloon="For demo purposes, we'll automatically redirect to success page in 5 seconds" data-balloon-pos="top" data-balloon-visible onClick="return switchScreen(5);">
-          Status: Waiting for payment&hellip;
-        </div>
+        <div class=checkout-header>
+          <img src="assets/img/verify.svg">
+        </div>      	
+        <div class="bitcoin-payment">
+	      	<div class="container">
+	      		<div class="columns">
+	      			<div class="column is6">
+	      				
+	        		<h2 class="section-title">This purchase is 100% protected</h2>
+	        		You are paying with <img src="assets/img/btc.svg"><strong>Bitcoin</strong> <a href="#">(Change)</a>
+	        		<hr>
+
+	        		<div class="columns">
+	        			<div class="column is-4">
+	        				Transfer <strong>0.2 BTC</strong> to:<br>
+	        				Rate: 1 BTC = $7,150
+       				
+	        			</div>
+	        			<div class="column is-8">
+			        		<img src="assets/img/qr-code.svg" width=300 height=300> 
+	        				
+	        			</div>
+	        		</div>
+
+	        		<hr>
+	        		<div data-balloon="For demo purposes, we'll automatically redirect to success page in 5 seconds" data-balloon-pos="top" data-balloon-visible onClick="return switchScreen(5);">
+	          		Status: Waiting for payment&hellip;
+	        		</div>
+
+	      			</div>
+	      		</div>
+	      	</div>
+      	</div>
+
       </div><!-- #screen-4 -->
 
       <div id=screen-5 class=screen>
-        <h1>Order Complete!</h1>
-        <div class=item>
-          <div class=item--image>
-            <img src="assets/img/nike.png">
-          </div>
-          <div class=item--title>Nike Air</div>
-          <div class=item--price>$250</div>
-          - Condition: New
-        </div>
-        <p>We've sent a confirmation email to <strong>your@email.com</strong> with your order details and a link to your order tracking page.</p>
-        <p>Please keep this email. You will need it if you need to inquire about the order status, or to file a dispute</p>
-        <div class=shipping--powered-by>
-          <img src="assets/img/powered-by-verify.svg">
-        </div>
+      	<div class="container">
+      		
+      		<div class="columns">
+
+      			<div class="column is8">
+      				
+			        <h2 class="section-tite">Order Complete!</h2>
+			        <div class=item>
+			          <div class=item--image>
+			            <img src="assets/img/nike.png">
+			          </div>
+			          <div class=item--title>Nike Air</div>
+			          <div class=item--price>$250</div>
+			          - Condition: New
+			        </div>
+			        <p>We've sent a confirmation email to <strong>your@email.com</strong> with your order details and a link to your order tracking page.</p>
+			        <p>Please keep this email. You will need it if you need to inquire about the order status, or to file a dispute</p>
+			        <div class=shipping--powered-by>
+			          <img src="assets/img/powered-by-verify.svg">
+			        </div> 
+      			</div>
+
+
+      		</div>
+
+
+      	</div>
+
       </div>
 
     </div><!-- ./main -->

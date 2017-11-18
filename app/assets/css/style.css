@@ -1769,9 +1769,35 @@ a {
     text-decoration: underline;
     color: #4183D7; }
 
+hr {
+  border: 0;
+  border-bottom: 1px solid #F5F5F5;
+  outline: 0;
+  margin: 0.5rem 0; }
+
 .section-title {
   margin-bottom: 1rem;
   margin-top: 0; }
+
+.seondary-section-title {
+  color: #545D63;
+  text-transform: uppercase;
+  margin: 0.5rem 0 0.5rem 0; }
+
+.logo-title {
+  font-size: 1rem;
+  font-family: Playfair Display,serif;
+  letter-spacing: -.5px;
+  color: #293137;
+  margin-top: 0;
+  margin-bottom: .25rem; }
+
+.logo-desc {
+  font-size: 0.75rem;
+  color: #545D63;
+  margin: 0;
+  display: inline-block;
+  vertical-align: top; }
 
 table {
   border-collapse: collapse;
@@ -1974,7 +2000,7 @@ label {
   .input-wrap--radio-big {
     background: #F5F5F5;
     box-shadow: 0 0 1px #D3D4D8;
-    padding: 1rem;
+    padding: 0.75rem 1rem;
     padding-right: 0; }
     .input-wrap--radio-big label {
       display: -ms-flexbox;
@@ -2141,6 +2167,20 @@ label {
 .checkout-body {
   margin-top: 4rem; }
 
+.delivery {
+  padding-left: 1.5rem;
+  position: relative;
+  margin-top: 1rem; }
+  .delivery img {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    top: 0.5rem; }
+
+.bitcoin-payment {
+  margin-top: 2rem; }
+
 .item-image img {
   width: 95%; }
 
@@ -2167,6 +2207,38 @@ label {
 
 .item-desc__info {
   margin: 0; }
+
+.alert {
+  background-color: #F5F5F5;
+  padding: 0.75rem 1.25rem;
+  line-height: 2rem;
+  border: 0;
+  font-weight: normal;
+  border-radius: 4px;
+  position: relative; }
+  .alert--small {
+    padding: 1rem;
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    padding-left: 5rem;
+    line-height: 1.5; }
+  .alert-info, .alert--info {
+    color: #19B5FE;
+    background-color: #F1FBFF; }
+  .alert__icon {
+    margin-right: 1rem;
+    position: absolute;
+    left: 1.5rem; }
+  .alert__title {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1rem; }
+  .alert ul {
+    padding: 0;
+    padding-left: 1rem;
+    margin: 0; }
+  .alert .alert-heading:last-child {
+    margin-bottom: 0; }
 
 @media print {
   * {

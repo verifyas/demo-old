@@ -58,9 +58,36 @@ a{
   }
 }
 
+hr{
+  border: 0;
+  border-bottom: 1px solid $color-bg-light1;
+  outline: 0;
+  margin: 0.5rem 0;
+}
+
 .section-title{
   margin-bottom: 1rem;
   margin-top: 0;
+}
+.seondary-section-title{
+  color: $color-typography2;
+  text-transform: uppercase;
+  margin:0.5rem 0 0.5rem 0;
+}
+.logo-title{
+    font-size: 1rem;
+    font-family: Playfair Display,serif;
+    letter-spacing: -.5px;
+    color: #293137;
+    margin-top: 0;
+    margin-bottom: .25rem;  
+}
+.logo-desc{
+    font-size: 0.75rem;
+    color: $color-typography2;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
 }
 
 table {
