@@ -1,0 +1,79 @@
+input[type=text], select {
+
+    &:focus{
+		outline: 0;
+		border-color: $color-primary-base;
+    }
+
+    &:hover{
+    	box-shadow: 0 0 2px $color-bg-light2;
+    }
+
+    border: 1px solid $color-bg-light2;
+    height: 2.5rem;
+    background-color: #ffffff;
+    // padding: 0 3rem 0 0.75rem;
+    padding: 0 0.75rem 0 0.75rem;
+    width: 100%;
+    position: relative;
+    transition: border 0.2s, box-shadow 0.2s;
+    font-family: $font-sans;
+    font-size: 1rem;
+    border-radius: 2px;
+}
+
+textarea{
+	@extend input[type];
+	height: auto;
+	padding: 1rem;
+}
+
+label{
+	text-transform: none;
+	color: $color-typography1;
+	font-weight: 500;
+}
+
+
+// Input wrap
+.input-wrap{
+    margin-bottom: 1rem;
+    
+    p{
+        margin: 0;
+        font-size: 0.875rem;
+        color: $color-typography2;
+        display: none;
+        text-align: right;
+    }
+
+    input[type]:focus + .input-wrap__info-tip{
+        display: block;
+    }
+    
+    // Error State
+    &.input-wrap--has-error {
+        input[type],textarea{
+            border-color: $color-notification-danger;
+        }
+
+        // Show Error Message
+        .input-wrap__error-msg{
+            color: $color-notification-danger;
+            display: block;
+        }
+
+        // Don't show info tip
+        input[type]:focus + .input-wrap__info-tip{
+            display: none;
+        }
+    }
+
+    .input-wrap__input-icon{
+        position: absolute;
+        text-align: center;
+        right: 0;
+        top: 0;
+        //color: $primaryColor;
+    }
+}

@@ -1769,6 +1769,10 @@ a {
     text-decoration: underline;
     color: #4183D7; }
 
+.section-title {
+  margin-bottom: 1rem;
+  margin-top: 0; }
+
 table {
   border-collapse: collapse;
   width: 100%;
@@ -1918,6 +1922,55 @@ table tr:last-child td:last-child {
   .btn.btn-block, .btn.btn--block {
     width: 100%;
     padding: 0; }
+
+input[type=text], select {
+  border: 1px solid #D3D4D8;
+  height: 2.5rem;
+  background-color: #ffffff;
+  padding: 0 0.75rem 0 0.75rem;
+  width: 100%;
+  position: relative;
+  transition: border 0.2s, box-shadow 0.2s;
+  font-family: "Nunito", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  border-radius: 2px; }
+  input[type=text]:focus, select:focus {
+    outline: 0;
+    border-color: #4183D7; }
+  input[type=text]:hover, select:hover {
+    box-shadow: 0 0 2px #D3D4D8; }
+
+textarea {
+  height: auto;
+  padding: 1rem; }
+
+label {
+  text-transform: none;
+  color: #293137;
+  font-weight: 500; }
+
+.input-wrap {
+  margin-bottom: 1rem; }
+  .input-wrap p {
+    margin: 0;
+    font-size: 0.875rem;
+    color: #545D63;
+    display: none;
+    text-align: right; }
+  .input-wrap input[type]:focus + .input-wrap__info-tip, .input-wrap textarea:focus + .input-wrap__info-tip {
+    display: block; }
+  .input-wrap.input-wrap--has-error input[type], .input-wrap.input-wrap--has-error textarea, .input-wrap.input-wrap--has-error textarea {
+    border-color: #E13A3A; }
+  .input-wrap.input-wrap--has-error .input-wrap__error-msg {
+    color: #E13A3A;
+    display: block; }
+  .input-wrap.input-wrap--has-error input[type]:focus + .input-wrap__info-tip, .input-wrap.input-wrap--has-error textarea:focus + .input-wrap__info-tip {
+    display: none; }
+  .input-wrap .input-wrap__input-icon {
+    position: absolute;
+    text-align: center;
+    right: 0;
+    top: 0; }
 
 @font-face {
   font-family: 'Font-Name';

@@ -120,28 +120,66 @@
       </div><!-- #screen-1 -->
 
       <div id=screen-2 class=screen>
-        <h1>Your items</h1>
-        <div class=item>
-          <div class=item--image>
-            <img src="assets/img/nike.png">
-          </div>
-          <div class=item--title>Nike Air</div>
-          <div class=item--price>$250</div>
-        </div>
+      	<div class="container">
+      		
+      		<div class="columns">
 
-        <h2>Shipping Details</h2>
-        <form>
-          <input type=text placeholder="your@email.com">
-          <input type=text placeholder="Address">
-          <input type=text placeholder="Apt, Room">
-          <input type=text placeholder="ZIP" value="12345">
-          <input type=text placeholder="Country" value="United States">
+				<div class="column is-4">
+			        <h2 class="section-title">Your items</h2>
+			        <div class=item>
+			          <div class=item--image>
+			            <img src="assets/img/nike.png">
+			          </div>
+			          <div class=item--title>Nike Air</div>
+			          <div class=item--price>$250</div>
+			        </div>					
+				</div> 
 
-          <button data-balloon="Let's pay with crypto!" data-balloon-pos="right" data-balloon-visible onClick="return switchScreen(3);">Pay with Crypto</button>
-          <div class=shipping--powered-by>
-            <img src="assets/img/powered-by-verify.svg">
-          </div>
-        </form>
+				<div class="column is-6">
+			        <h2 class="section-title">Shipping Details</h2>
+			        <form>	        	
+						<div class="input-wrap">
+							<label for="Email">Email</label>
+							<input type=text placeholder="your@email.com" name="email" id="Email">
+							<p class="input-wrap__error-msg"></p>
+						</div>
+
+						<div class="input-wrap">
+							<label for="address1">Address Line 1</label>
+							<input type=text placeholder="Your Address" name="addressLine1" id="address1">
+							<p class="input-wrap__error-msg"></p>
+						</div>
+
+						<div class="input-wrap">
+							<label for="Address2">Address Line 2</label>
+							<input type=text placeholder="Building, Apartment No" name="addressLine2" id="Address2">
+							<p class="input-wrap__error-msg"></p>
+						</div>
+
+						<div class="input-wrap">
+							<label for="zip">Zip</label>
+							<input type=text placeholder="Zip Code" name="zip" id="zip">
+							<p class="input-wrap__error-msg"></p>
+						</div>
+
+						<div class="input-wrap">
+							<label for="country">Country</label>
+							<input type=text placeholder="Country" value="United States">
+							<p class="input-wrap__error-msg"></p>
+						</div>
+
+			          <button data-balloon="Let's pay with crypto!" data-balloon-pos="right" data-balloon-visible onClick="return switchScreen(3);" class="btn btn--primary">Pay with Crypto</button>
+			          <br><br>
+			          <div class=shipping--powered-by>
+			            <img src="assets/img/powered-by-verify.svg">
+			          </div>
+			        </form>					
+				</div>     			
+
+
+      		</div>
+      	</div>
+
       </div><!-- #screen-2 -->
 
       <div id=screen-3 class=screen>
