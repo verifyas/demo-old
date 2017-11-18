@@ -67,15 +67,25 @@
   width: 150px;
 }
 
-.checkout--header {
+.checkout-header {
   background: linear-gradient(to right, #00846b, #004d47);
   text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 4rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
 
   img {
-    width: 150px;
+    //width: 150px;
+    height: 100%;
   }
 }
 
 .checkout--rating img {
   width: 20px;
+}
+
+.checkout-body{
+  margin-top: 4rem;
 }

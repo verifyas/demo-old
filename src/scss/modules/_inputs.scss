@@ -76,4 +76,110 @@ label{
         top: 0;
         //color: $primaryColor;
     }
+
+    &--radio-big{
+        background: $color-bg-light1;
+        box-shadow: 0 0 1px $color-bg-light2;
+        padding: 1rem;
+        padding-right: 0;
+
+        label{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .info{
+            font-weight: normal;
+            color: $color-typography2;
+            span{
+                display: block;
+                font-weight: bold;
+                color: $color-typography1;
+            }
+        }
+
+        .image img{
+            height: 3rem;
+        }
+    }
+}
+
+.radio-inline input[type="radio"], input[type="radio"]{
+    display: none;
+    width: auto;
+    height: auto;
+    
+    & + label, & + span{
+        position: relative;
+        vertical-align: top;
+        cursor: pointer;
+        font-weight: normal;
+        text-transform: none;
+        padding-left: 2.75rem;
+        margin-right: 2rem;
+    }
+
+    &:disabled + label:before, &:disabled  {
+        background-color: $color-bg-light2;
+        border: 0;
+        opacity: 0.5;
+        //border: 1px solid $color-bg-light2;
+    }
+
+    &:disabled + label{
+        cursor: not-allowed;
+        font-style: italic;
+        color: $color-typography3;
+    }
+    &:disabled + label:hover:before, &:disabled + span:hover:before{
+        box-shadow: none;
+    }
+
+    &:disabled:checked + label:after, &:disabled:checked + span:after{
+        opacity: 0.5;
+    }
+
+    &:checked:disabled + label:before{
+        opacity: 0.5;
+    }
+
+    & + label:before, & + span:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-color: #ffffff;
+        border: 1px solid $color-bg-light2;
+        transition: opacity 0.3s, box-shadow 0.1s;
+        border-radius: 50%;
+        vertical-align: top;
+    }
+
+    & + label:hover:before, & + span:hover:before{
+        box-shadow: 0 0 3px $color-bg-light2;
+    }   
+
+    & + label:after, & + span:after {
+        content: ' ';
+        position: absolute;
+        display: inline-block;      
+        width: 16px;
+        height: 16px;       
+        border-radius: 50%;
+        left: 3px;
+        top: 3px;
+        background-color: $color-primary-base;
+        opacity: 0;
+    }
+
+    &:checked + label:before, &:checked + span:before{
+        border-color: $color-primary-base;
+    }
+
+    &:checked + label:after, &:checked + span:after{
+        opacity: 1;
+    }
 }

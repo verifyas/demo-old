@@ -1971,6 +1971,82 @@ label {
     text-align: center;
     right: 0;
     top: 0; }
+  .input-wrap--radio-big {
+    background: #F5F5F5;
+    box-shadow: 0 0 1px #D3D4D8;
+    padding: 1rem;
+    padding-right: 0; }
+    .input-wrap--radio-big label {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+    .input-wrap--radio-big .info {
+      font-weight: normal;
+      color: #545D63; }
+      .input-wrap--radio-big .info span {
+        display: block;
+        font-weight: bold;
+        color: #293137; }
+    .input-wrap--radio-big .image img {
+      height: 3rem; }
+
+.radio-inline input[type="radio"], input[type="radio"] {
+  display: none;
+  width: auto;
+  height: auto; }
+  .radio-inline input[type="radio"] + label, .radio-inline input[type="radio"] + span, input[type="radio"] + label, input[type="radio"] + span {
+    position: relative;
+    vertical-align: top;
+    cursor: pointer;
+    font-weight: normal;
+    text-transform: none;
+    padding-left: 2.75rem;
+    margin-right: 2rem; }
+  .radio-inline input[type="radio"]:disabled + label:before, .radio-inline input[type="radio"]:disabled, input[type="radio"]:disabled + label:before, input[type="radio"]:disabled {
+    background-color: #D3D4D8;
+    border: 0;
+    opacity: 0.5; }
+  .radio-inline input[type="radio"]:disabled + label, input[type="radio"]:disabled + label {
+    cursor: not-allowed;
+    font-style: italic;
+    color: #D3D4D8; }
+  .radio-inline input[type="radio"]:disabled + label:hover:before, .radio-inline input[type="radio"]:disabled + span:hover:before, input[type="radio"]:disabled + label:hover:before, input[type="radio"]:disabled + span:hover:before {
+    box-shadow: none; }
+  .radio-inline input[type="radio"]:disabled:checked + label:after, .radio-inline input[type="radio"]:disabled:checked + span:after, input[type="radio"]:disabled:checked + label:after, input[type="radio"]:disabled:checked + span:after {
+    opacity: 0.5; }
+  .radio-inline input[type="radio"]:checked:disabled + label:before, input[type="radio"]:checked:disabled + label:before {
+    opacity: 0.5; }
+  .radio-inline input[type="radio"] + label:before, .radio-inline input[type="radio"] + span:before, input[type="radio"] + label:before, input[type="radio"] + span:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border: 1px solid #D3D4D8;
+    transition: opacity 0.3s, box-shadow 0.1s;
+    border-radius: 50%;
+    vertical-align: top; }
+  .radio-inline input[type="radio"] + label:hover:before, .radio-inline input[type="radio"] + span:hover:before, input[type="radio"] + label:hover:before, input[type="radio"] + span:hover:before {
+    box-shadow: 0 0 3px #D3D4D8; }
+  .radio-inline input[type="radio"] + label:after, .radio-inline input[type="radio"] + span:after, input[type="radio"] + label:after, input[type="radio"] + span:after {
+    content: ' ';
+    position: absolute;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    left: 3px;
+    top: 3px;
+    background-color: #4183D7;
+    opacity: 0; }
+  .radio-inline input[type="radio"]:checked + label:before, .radio-inline input[type="radio"]:checked + span:before, input[type="radio"]:checked + label:before, input[type="radio"]:checked + span:before {
+    border-color: #4183D7; }
+  .radio-inline input[type="radio"]:checked + label:after, .radio-inline input[type="radio"]:checked + span:after, input[type="radio"]:checked + label:after, input[type="radio"]:checked + span:after {
+    opacity: 1; }
 
 @font-face {
   font-family: 'Font-Name';
@@ -2048,14 +2124,22 @@ label {
 .shipping--powered-by img {
   width: 150px; }
 
-.checkout--header {
+.checkout-header {
   background: linear-gradient(to right, #00846b, #004d47);
-  text-align: center; }
-  .checkout--header img {
-    width: 150px; }
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 4rem;
+  height: 2.5rem;
+  line-height: 2.5rem; }
+  .checkout-header img {
+    height: 100%; }
 
 .checkout--rating img {
   width: 20px; }
+
+.checkout-body {
+  margin-top: 4rem; }
 
 .item-image img {
   width: 95%; }

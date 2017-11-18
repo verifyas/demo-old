@@ -183,51 +183,108 @@
       </div><!-- #screen-2 -->
 
       <div id=screen-3 class=screen>
-        <div class=checkout--header>
+        <div class=checkout-header>
           <img src="assets/img/verify.svg">
         </div>
-        <div class=checkout--body>
-          <h2>Bob's Shoe Store</h2>
-          <div class=checkout--rating>
-            <img src="assets/img/star-on.svg">
-            <img src="assets/img/star-on.svg">
-            <img src="assets/img/star-on.svg">
-            <img src="assets/img/star-on.svg">
-            <img src="assets/img/star-on.svg">
-            from <strong>154</strong> reviews
-          </div>
-          <hr>
-          Your order details:
-          <div class=item>
-            <div class=item--image>
-              <img src="assets/img/nike.png">
-            </div>
-            <div class=item--title>Nike Air</div>
-            <div class=item--price>$250</div>
-            - Condition: New
-          </div>
+		<div class="container">
+			
+	        <div class=checkout-body>
 
-          <div class=delivery>
-            Delivery by <strong>Monday, Dec 20</strong><br>
-            FREE returns: <strong>Shipper pays</strong> return shipping charges.
-          </div>
-          <div class=protection>
-            100% protection against:
-            <ul>
-              <li>Late delivery</li>
-              <li>Damaged / defective product</li>
-              <li>Inaccurately described product</li>
-              <li>Fake / non-genuine products</li>
-            </ul>
-          </div>
-          <hr>
-          <div class="checkout--payment">
-            Pay with &hellip;
-            <a href="#" onClick="switchScreen(4)"  data-balloon="Let's pay with Bitcoin, shall we?" data-balloon-pos="right" data-balloon-visible>
-              <img src="assets/img/btc.svg">
-            </a>
-          </div>
-        </div>
+	        	<div class="columns">
+	        		
+	        		<div class="column is-4">
+			          <h2>Bob's Shoe Store</h2>
+			          <div class=checkout--rating>
+			            <img src="assets/img/star-on.svg">
+			            <img src="assets/img/star-on.svg">
+			            <img src="assets/img/star-on.svg">
+			            <img src="assets/img/star-on.svg">
+			            <img src="assets/img/star-on.svg">
+			            from <strong>154</strong> reviews
+			          </div>
+			          <hr>
+			          Your order details:
+			          <div class=item>
+			            <div class=item--image>
+			              <img src="assets/img/nike.png">
+			            </div>
+			            <div class=item--title>Nike Air</div>
+			            <div class=item--price>$250</div>
+			            - Condition: New
+			          </div>
+
+			          <div class=delivery>
+			            Delivery by <strong>Monday, Dec 20</strong><br>
+			            FREE returns: <strong>Shipper pays</strong> return shipping charges.
+			          </div>	        			
+	        		</div>
+
+	        		<div class="column is-6">
+
+			          <div class="checkout--payment">
+			            <label>Choose Your Currency:</label>
+
+			            <div class="cryptocurrency_payment">
+							<div class="input-wrap input-wrap--radio-big">
+								<input type="radio" id="radio-1" name="radio" checked>
+								<label for="radio-1">
+									<div class="info">
+										Bitcoin -  Rate: 1 BTC = $7,150
+										<span>0.2 BTC</span>
+										
+									</div>
+
+									<div class="image">
+										<img src="assets/img/btc.svg">
+									</div>									
+								</label>  	
+							</div>			            	
+			            </div>
+
+			            <div class="cryptocurrency_payment">
+							<div class="input-wrap input-wrap--radio-big">
+								<input type="radio" id="radio-2" name="radio">
+								<label for="radio-2">
+									<div class="info">
+										Etherum
+										<span>0.5 ETH</span>
+										
+									</div>
+
+									<div class="image">
+										<img src="assets/img/ethereum.svg">
+									</div>									
+								</label>  	
+							</div>			            	
+			            </div>
+
+
+			            <button href="#" onClick="switchScreen(4)"  data-balloon="Let's pay with Bitcoin, shall we?" data-balloon-pos="right" data-balloon-visible class="btn btn--primary">
+			              Pay Using Bitcoin
+			            </button>
+			          </div>	
+
+
+			          <hr>
+			          <div class=protection>
+			            100% protection against:
+			            <ul>
+			              <li>Late delivery</li>
+			              <li>Damaged / defective product</li>
+			              <li>Inaccurately described product</li>
+			              <li>Fake / non-genuine products</li>
+			            </ul>
+			          </div> 
+
+			                 			
+	        		</div>
+	        	</div>
+
+
+	        </div>
+
+		</div>
+
       </div><!-- #screen-3 -->
 
       <div id=screen-4 class=screen>
