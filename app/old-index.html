@@ -209,9 +209,9 @@
 							<p class="input-wrap__error-msg"></p>
 						</div>
 
-			          <button data-balloon="Let's pay with crypto!" data-balloon-pos="right" data-balloon-visible class="btn btn--primary desktop-only" id="verify-pay">Pay with Crypto</button>
+			          <button data-balloon="Let's pay with crypto!" data-balloon-pos="right" data-balloon-visible onClick="return switchScreen(3);" class="btn btn--primary desktop-only" id="verify-pay">Pay with Crypto</button>
 
-			          <button data-balloon="Let's pay with crypto!" data-balloon-pos="up" data-balloon-visible class="btn btn--primary mobile-only btn--block" id="verify-pay-mobile">Pay with Crypto</button>
+			          <button data-balloon="Let's pay with crypto!" data-balloon-pos="up" data-balloon-visible onClick="return switchScreen(3);" class="btn btn--primary mobile-only btn--block" id="verify-pay-mobile">Pay with Crypto</button>
 
 			          <br><br>
 			          <div class=shipping--powered-by>
@@ -226,29 +226,13 @@
 
       </div><!-- #screen-2 -->
 
-    </div><!-- ./main -->
-
-    <footer class="main-footer">
-    	<p class="main-footer__text">
-    		An E-Commerce demo site presenting how Verify works, © all copyrights goes to Verify
-    	</p>
-    </footer>
-
-
-
-	<!-- Modal Screens -->
-	<div class="modal" id="verify-modal">
-	  <div class="modal-background"></div>
-	  <div class="modal-card">
-	    <header class="modal-card-head">
-	        <div class=checkout-header>
-	          <img src="assets/img/verify.svg">
-	        </div>
-	    </header>
-
-
-	    <section class="modal-card-body">
-	        <div class="modal-screen" id="modal-screen-1">
+      <div id=screen-3 class=screen>
+        <div class=checkout-header>
+          <img src="assets/img/verify.svg">
+        </div>
+		<div class="container">
+			
+	        <div class=checkout-body>
 
 	        	<div class="columns">
 	        		
@@ -286,8 +270,8 @@
 
 			            <div class="cryptocurrency_payment">
 							<div class="input-wrap input-wrap--radio-big">
-								<input type="radio" id="radio-btc" name="cryptoRadio" checked>
-								<label for="radio-btc">
+								<input type="radio" id="radio-1" name="radio" checked>
+								<label for="radio-1">
 									<div class="info">
 										Bitcoin -  Rate: 1 BTC = $7,150
 										<span>0.2 BTC</span>
@@ -303,8 +287,8 @@
 
 			            <div class="cryptocurrency_payment">
 							<div class="input-wrap input-wrap--radio-big">
-								<input type="radio" id="radio-eth" name="cryptoRadio">
-								<label for="radio-eth">
+								<input type="radio" id="radio-2" name="radio">
+								<label for="radio-2">
 									<div class="info">
 										Etherum
 										<span>0.5 ETH</span>
@@ -319,7 +303,7 @@
 			            </div>
 
 
-			            <button href="#" onClick="switchModalScreen(2)"  data-balloon="Let's pay with Bitcoin, shall we?" data-balloon-pos="right" data-balloon-visible class="btn btn--primary">
+			            <button href="#" onClick="switchScreen(4)"  data-balloon="Let's pay with Bitcoin, shall we?" data-balloon-pos="right" data-balloon-visible class="btn btn--primary">
 			              Pay Using Bitcoin
 			            </button>
 			          </div>	
@@ -347,91 +331,101 @@
 
 	        </div>
 
+		</div>
 
-	        <!-- Screen 2 -->
-	        <div class="bitcoin-payment modal-screen" id="modal-screen-2">
-		      		<div class="columns">
-		      			<div class="column is-10">
-		      				
-		        		<h2 class="section-title">This purchase is 100% protected</h2>
-		        		You are paying with <img src="assets/img/btc.svg"><strong>Bitcoin</strong> <a href="#">(Change)</a>
-		        		<hr>
+      </div><!-- #screen-3 -->
 
-		        		<div class="columns">
-		        			<div class="column is-4">
-		        				Transfer <strong>0.2 BTC</strong> to:<br>
-		        				Rate: 1 BTC = $7,150
-	       				
-		        			</div>
-		        			<div class="column is-8">
-				        		<img src="assets/img/qr-code.svg" width=300 height=300> 
-		        				
-		        			</div>
-		        		</div>
+      <div id=screen-4 class=screen>
+        <div class=checkout-header>
+          <img src="assets/img/verify.svg">
+        </div>      	
+        <div class="bitcoin-payment">
+	      	<div class="container">
+	      		<div class="columns">
+	      			<div class="column is6">
+	      				
+	        		<h2 class="section-title">This purchase is 100% protected</h2>
+	        		You are paying with <img src="assets/img/btc.svg"><strong>Bitcoin</strong> <a href="#">(Change)</a>
+	        		<hr>
 
-		        		<hr>
-		        		<a data-balloon="For demo purposes, we'll automatically redirect to success page in 5 seconds" data-balloon-pos="right" data-balloon-visible onClick="return switchModalScreen(3);">
-		          		Status: Waiting for payment&hellip;
-		        		</a>
+	        		<div class="columns">
+	        			<div class="column is-4">
+	        				Transfer <strong>0.2 BTC</strong> to:<br>
+	        				Rate: 1 BTC = $7,150
+       				
+	        			</div>
+	        			<div class="column is-8">
+			        		<img src="assets/img/qr-code.svg" width=300 height=300> 
+	        				
+	        			</div>
+	        		</div>
 
-		      			</div>
-		      		</div>
+	        		<hr>
+	        		<div data-balloon="For demo purposes, we'll automatically redirect to success page in 5 seconds" data-balloon-pos="top" data-balloon-visible onClick="return switchScreen(5);">
+	          		Status: Waiting for payment&hellip;
+	        		</div>
+
+	      			</div>
+	      		</div>
 	      	</div>
-			<!-- Screen2ModalEnds -->
+      	</div>
 
-			
-			<!-- ModalScreen 3 -->
+      </div><!-- #screen-4 -->
 
-	      	<div class="checkout-complete modal-screen" id=modal-screen-3 >
-	      		
-		      		<div class="columns">
+      <div id=screen-5 class=screen>
+        <div class=checkout-header>
+          <img src="assets/img/verify.svg">
+        </div>
 
-		      			<div class="column">
-					        		<div class="check-wrapper">
-					        			<img src="assets/img/check.svg" alt="">
-					        			<h2 class="section-title">Payment Complete</h2>
-					        		</div>
+      	<div class="checkout-complete">
+      		<div class="container">
+      		
+	      		<div class="columns">
 
-		      				
-						       <p>We've sent a confirmation email to <strong>your@email.com</strong> with your order details and a link to your 	order tracking page.<br>
-						        Please keep this email. You will need it if you need to inquire about the order status, or to file a dispute	
-						    	</p>
-							<hr>
-						    <h4 class="seondary-section-title">Order Summary </h4>			        		
-					        <div class="item item--cart">
-					          <div class=item__image>
-					            <img src="assets/img/nike.png">
-					          </div>
-					          <div class=item__title>Nike Air</div>
-					          <div class=item__price>$250</div>
-					          <div class="item__condition">- Condition: New</div>
-					        </div>
-					        <div class=shipping--powered-by>
-					          <img src="assets/img/powered-by-verify.svg">
-					        </div> 
-		      			</div>
+	      			<div class="column is-half is-offset-one-quarter">
+				        		<div class="check-wrapper">
+				        			<img src="assets/img/check.svg" alt="">
+				        			<h2 class="section-title">Payment Complete</h2>
+				        		</div>
 
-
+	      				
+					       <p>We've sent a confirmation email to <strong>your@email.com</strong> with your order details and a link to your 	order tracking page.<br>
+					        Please keep this email. You will need it if you need to inquire about the order status, or to file a dispute	
+					    	</p>
+						<hr>
+					    <h4 class="seondary-section-title">Order Summary </h4>			        		
+				        <div class="item item--cart">
+				          <div class=item__image>
+				            <img src="assets/img/nike.png">
+				          </div>
+				          <div class=item__title>Nike Air</div>
+				          <div class=item__price>$250</div>
+				          <div class="item__condition">- Condition: New</div>
+				        </div>
+				        <div class=shipping--powered-by>
+				          <img src="assets/img/powered-by-verify.svg">
+				        </div> 
 	      			</div>
 
 
-	      </div>
+      			</div>
 
-	      <!-- ModalSceen 3 Ends -->
 
-	    </section>
-<!-- 	    <footer class="modal-card-foot">
-	      <button class="button is-success">Save changes</button>
-	      <button class="button">Cancel</button>
-	    </footer> -->
-	  <button class="modal-close is-large" aria-label="close" id="close-modal"></button>
+      		</div>
+      	</div>
 
-	  </div>
-	</div>	
+      </div>
 
+    </div><!-- ./main -->
+
+    <footer class="main-footer">
+    	<p class="main-footer__text">
+    		An E-Commerce demo site presenting how Verify works, © all copyrights goes to Verify
+    	</p>
+    </footer>
 
     <script src="assets/components/jquery/jquery.min.js"></script>
     <script src="assets/js/scripts.min.js"></script>
 
   </body>
-</html>
+</html>    

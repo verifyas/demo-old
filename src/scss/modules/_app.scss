@@ -6,6 +6,15 @@
   }
 }
 
+// Modal Screen
+.modal-screen {
+  display: none;
+
+  &:first-of-type {
+    display: block;
+  }
+}
+
 .item {
   border: 1px solid #ccc;
   width: 160px;
@@ -28,7 +37,7 @@
   position: fixed;
   top: 2rem;
   right: 2rem;
-  z-index: 100;
+  z-index: 1;
   background: #ffffff;
   box-shadow: 0 0 2px $color-bg-light2;
 

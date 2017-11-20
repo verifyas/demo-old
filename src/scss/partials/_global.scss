@@ -123,3 +123,28 @@ table tr:last-child td:last-child {
     border-bottom-right-radius: 10px;
 }
 
+
+
+
+.modal{
+
+    .modal-card{
+      width: 90% ;
+    }
+
+    .modal-screen{
+      background-color: #ffffff;
+    }    
+
+    .checkout-header{
+      top: 0;
+      height: 3rem;
+      left: 0;
+    }
+
+    .modal-card-foot{
+      border-radius: 0;
+    }
+
+
+}
