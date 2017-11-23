@@ -133,8 +133,35 @@
 }
 
 .bitcoin-payment{
-  margin-top: 2rem;
+  margin-top: 0rem;
+
+  .section-title{
+    margin-bottom: 0.5rem;
+  }
+
+  &__status{
+    margin: 0;
+    img{
+        width: 2rem;
+        margin-right: 0.5rem;
+    }
+  }
+
+  &__qr-code{
+    text-align: center;
+
+    p{
+        margin: 0;
+    }
+
+    img{
+        width: 300px;
+        height: 300px;
+    }
+  }
+
+
 }
 .checkout-complete{
-  margin-top: 2rem;
+
 }

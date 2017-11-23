@@ -2015,8 +2015,6 @@ p {
   line-height: 1.6;
   margin-top: 0;
   margin-bottom: 1.5rem; }
-  p.text-center {
-    text-align: center; }
   p.small {
     font-size: 0.75rem;
     margin-bottom: 0.5rem; }
@@ -2034,6 +2032,21 @@ hr {
   border-bottom: 1px solid #F5F5F5;
   outline: 0;
   margin: 0.5rem 0; }
+
+.text-center {
+  text-align: center; }
+
+.m-b-0 {
+  margin-bottom: 0; }
+
+.m-t-0 {
+  margin-top: 0; }
+
+.m-r-0 {
+  margin-right: 0; }
+
+.m-l-0 {
+  margin-left: 0; }
 
 .section-title {
   margin-bottom: 1rem;
@@ -2081,9 +2094,6 @@ table tr:last-child td:first-child {
 
 table tr:last-child td:last-child {
   border-bottom-right-radius: 10px; }
-
-.modal .modal-card {
-  width: 90%; }
 
 .modal .modal-screen {
   background-color: #ffffff; }
@@ -2474,10 +2484,21 @@ label {
     top: 0.5rem; }
 
 .bitcoin-payment {
-  margin-top: 2rem; }
-
-.checkout-complete {
-  margin-top: 2rem; }
+  margin-top: 0rem; }
+  .bitcoin-payment .section-title {
+    margin-bottom: 0.5rem; }
+  .bitcoin-payment__status {
+    margin: 0; }
+    .bitcoin-payment__status img {
+      width: 2rem;
+      margin-right: 0.5rem; }
+  .bitcoin-payment__qr-code {
+    text-align: center; }
+    .bitcoin-payment__qr-code p {
+      margin: 0; }
+    .bitcoin-payment__qr-code img {
+      width: 300px;
+      height: 300px; }
 
 .item-image img {
   width: 95%; }
@@ -2623,7 +2644,10 @@ label {
     width: 96%;
     padding: 0.5rem; }
     .item-desc__btn-container button {
-      width: 100%; } }
+      width: 100%; }
+  .bitcoin-payment__qr-code img {
+    width: 100%;
+    height: auto; } }
 
 @media print {
   * {

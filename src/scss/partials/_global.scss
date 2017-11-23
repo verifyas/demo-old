@@ -49,10 +49,6 @@ p{
   margin-top :0;
   margin-bottom: 1.5rem;
 
-  &.text-center{
-    text-align: center;
-  }
-
   &.small{
     font-size: 0.75rem;
     margin-bottom: 0.5rem;
@@ -77,6 +73,23 @@ hr{
   border-bottom: 1px solid $color-bg-light1;
   outline: 0;
   margin: 0.5rem 0;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.m-b-0{
+    margin-bottom: 0;
+}
+.m-t-0{
+    margin-top: 0;
+}
+.m-r-0{
+    margin-right: 0;
+}
+.m-l-0{
+    margin-left: 0;
 }
 
 .section-title{
@@ -143,7 +156,7 @@ table tr:last-child td:last-child {
 .modal{
 
     .modal-card{
-      width: 90% ;
+      //width: 90% ;
     }
 
     .modal-screen{

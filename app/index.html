@@ -348,7 +348,7 @@
 		            	<button href="#" onClick="switchModalScreen(2)"  data-balloon="Let's pay with Bitcoin, shall we?" data-balloon-pos="up" data-balloon-visible class="btn btn--primary btn--lg">
 		              	Pay 0.05 BTC 
 		            	</button>
-		            	<p class="small text-center">at 1BTC = $8260.04</p>
+		            	<p class="small text-center">at 1BTC = $7,150</p>
 		            </div>
 						
 
@@ -365,28 +365,31 @@
 	        <!-- Screen 2 -->
 	        <div class="bitcoin-payment modal-screen" id="modal-screen-2">
 		      		<div class="columns">
-		      			<div class="column is-10">
+		      			<div class="column is-12">
 		      				
-		        		<h2 class="section-title">This purchase is 100% protected</h2>
-		        		You are paying with <img src="assets/img/btc.svg"><strong>Bitcoin</strong> <a href="#">(Change)</a>
+		        		<h2 class="section-title text-center">This purchase is 100% protected</h2>
+		        			<p class="small bitcoin-payment__status text-center">You are paying with <img src="assets/img/btc.svg" alt="Bitcoin"><strong>Bitcoin</strong> <a href="#">(Change)</a>
+		        			</p>
 		        		<hr>
 
-		        		<div class="columns">
-		        			<div class="column is-4">
-		        				Transfer <strong>0.2 BTC</strong> to:<br>
-		        				Rate: 1 BTC = $7,150
-	       				
-		        			</div>
-		        			<div class="column is-8">
-				        		<img src="assets/img/qr-code.svg" width=300 height=300> 
+		        		<div class="columns is-centered">
+		        			<div class="column is-12 bitcoin-payment__qr-code">
+			        			<p>
+			        				Transfer <strong>0.2 BTC</strong> to:<br>
+			        				Rate: 1 BTC = $7,150
+		       				
+			        			</p>		        				
+				        		<img src="assets/img/qr-code.svg"> 
 		        				
 		        			</div>
 		        		</div>
 
 		        		<hr>
-		        		<a data-balloon="For demo purposes, we'll automatically redirect to success page in 5 seconds" data-balloon-pos="right" data-balloon-visible onClick="return switchModalScreen(3);">
+		        		
+		        		<p class="text-center m-b-0"> <a data-balloon="For demo purposes, we'll automatically redirect to success page in 5 seconds" data-balloon-pos="up" data-balloon-visible onClick="return switchModalScreen(3);">
 		          		Status: Waiting for payment&hellip;
 		        		</a>
+		        		</p>
 
 		      			</div>
 		      		</div>
