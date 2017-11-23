@@ -1,8 +1,9 @@
 # Verify MVP
-<img src="https://d33wubrfki0l68.cloudfront.net/ac3979574578f190ea3e4c7c76f4632c1393dd7a/8f92a/img/logo.svg" alt="Verify"/> 
+![alt text](app/assets/img/verify-.svg "Verify")
 
 Verify is a reputation protocol that tracks the transaction history of participants (buyers, sellers) and unlocks benefits for those with good reputation.
 ## Introduction
+This is the MVP for Verify 
 
 ## Setup Instructions
 ```bash
@@ -10,6 +11,8 @@ npm install
 gulp
 ```
 ## Purpose of MVP
+Audience: general users with some limited blockchain experience that are looking to invest. Some may be technical, others not technical at all.
+
 ## License
 MIT License
 
