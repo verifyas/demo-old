@@ -173,5 +173,12 @@ table tr:last-child td:last-child {
       border-radius: 0;
     }
 
+    .modal-close{
+        position: absolute;
+        border: 1px solid rgba(255,255,255,0.7);
+        right: 0.5rem;
+        top: 0.5rem;
+    }
+
 
 }

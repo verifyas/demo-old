@@ -58,6 +58,10 @@
 		display: block;
 	}
 
+	.crypto-mobile-button{
+		margin-top: 3rem;
+	}
+
 	.item-desc__price{
 		margin-bottom: 0;
 	}
@@ -93,6 +97,21 @@
 	  }
 
 	}
+
+	.modal{
+
+		.modal-close{
+        	position: absolute;
+        	border: 1px solid rgba(255,255,255,0.7);
+        	right: 0.5rem;
+        	top: 0.25rem;
+    	}
+    }
+
+    [data-balloon][data-balloon-pos=up]:after{
+    	width: 100%;
+    	white-space: normal;
+    }
 
 
 }

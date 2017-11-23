@@ -2106,6 +2106,12 @@ table tr:last-child td:last-child {
 .modal .modal-card-foot {
   border-radius: 0; }
 
+.modal .modal-close {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  right: 0.5rem;
+  top: 0.5rem; }
+
 .main-header {
   height: 4rem;
   box-shadow: 0 1px 2px #e1e1e4;
@@ -2408,7 +2414,8 @@ label {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+  margin-top: 2.5rem; }
 
 .checked-list {
   list-style-type: none;
@@ -2631,6 +2638,8 @@ label {
     display: none; }
   .item-mobile-only {
     display: block; }
+  .crypto-mobile-button {
+    margin-top: 3rem; }
   .item-desc__price {
     margin-bottom: 0; }
   .item-desktop-only {
@@ -2647,7 +2656,15 @@ label {
       width: 100%; }
   .bitcoin-payment__qr-code img {
     width: 100%;
-    height: auto; } }
+    height: auto; }
+  .modal .modal-close {
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    right: 0.5rem;
+    top: 0.25rem; }
+  [data-balloon][data-balloon-pos=up]:after {
+    width: 100%;
+    white-space: normal; } }
 
 @media print {
   * {
