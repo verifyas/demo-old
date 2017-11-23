@@ -28,6 +28,26 @@
   }
 }
 
+// CTA Container on Modal 
+.cta-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+// Lists with checked marks
+.checked-list{
+    list-style-type: none;
+    line-height: 2;
+    padding: 0;
+    margin: 0;
+
+    li{
+        background: url('/assets/img/check-green.svg') center left no-repeat;
+        padding-left: 2rem;
+        color: $color-typography2;
+    }
+}
+
 .badge {
   border: 1px solid $color-bg-light1;
   width: 160px;

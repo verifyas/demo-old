@@ -252,7 +252,7 @@
 
 	        	<div class="columns">
 	        		
-	        		<div class="column is-4">
+	        		<div class="column is-6">
 			          <h2 class="logo-title">Bob's Shoe Store</h2>
 			          <div class=checkout--rating>
 			            <img src="assets/img/star-on.svg">
@@ -280,7 +280,7 @@
 	        		</div>
 
 	        		<div class="column is-6">
-
+<!-- 
 			          <div class="checkout--payment">
 			            <label>Choose Your Currency:</label>
 
@@ -319,20 +319,14 @@
 			            </div>
 
 
-			            <button href="#" onClick="switchModalScreen(2)"  data-balloon="Let's pay with Bitcoin, shall we?" data-balloon-pos="right" data-balloon-visible class="btn btn--primary">
-			              Pay Using Bitcoin
-			            </button>
-			          </div>	
+
+			          </div> -->	
 
 
-			          <hr>
 
-			          <div class="alert alert--small protection">
-			          	<div class="alert__icon">
-							<img src="assets/img/window_security.svg" alt="">
-			        	</div>
-			            <h5 class="alert__title">100% protection against:</h5>
-			            <ul>
+			          <div class="alert alert--small alert--success protection">
+			            <h5 class="alert__title"><strong>100% protection</strong> against:</h5>
+			            <ul class="checked-list">
 			              <li>Late delivery</li>
 			              <li>Damaged / defective product</li>
 			              <li>Inaccurately described product</li>
@@ -340,9 +334,29 @@
 			            </ul>
 			          </div> 
 
+		          
+
 			                 			
 	        		</div>
+					<!-- End of RightColumn -->
+
 	        	</div>
+				
+
+				<div class="cta-container">
+					<div class="payment-section">
+		            	<button href="#" onClick="switchModalScreen(2)"  data-balloon="Let's pay with Bitcoin, shall we?" data-balloon-pos="up" data-balloon-visible class="btn btn--primary btn--lg">
+		              	Pay 0.05 BTC 
+		            	</button>
+		            	<p class="small text-center">at 1BTC = $8260.04</p>
+		            </div>
+						
+
+				</div>
+
+				<p class="text-center light small">
+					Usage of the Verify payments services implies acceptance of our Terms and Conditions and Privacy Policy
+				</p>				
 
 
 	        </div>
@@ -420,10 +434,7 @@
 	      <!-- ModalSceen 3 Ends -->
 
 	    </section>
-<!-- 	    <footer class="modal-card-foot">
-	      <button class="button is-success">Save changes</button>
-	      <button class="button">Cancel</button>
-	    </footer> -->
+
 	  <button class="modal-close is-large" aria-label="close" id="close-modal"></button>
 
 	  </div>

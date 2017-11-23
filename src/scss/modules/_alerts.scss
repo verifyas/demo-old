@@ -9,9 +9,9 @@
 
 	&--small{
 		padding: 1rem;
-		font-size: 0.75rem;
+		font-size: 0.85rem;
 		border-radius: 0.5rem;
-		padding-left: 5rem;
+		padding-left: 2rem;
 		line-height: 1.5;
 	}
 
@@ -22,7 +22,7 @@
 	&-success, &--success{
 		background-color: $color-notification-success-bright;
 		color: $color-notification-success;
-		padding-left: 6rem;
+		//padding-left: 6rem;
 	}
 
 	&-info, &--info{
@@ -51,12 +51,7 @@
 		margin: 0;
 		margin-bottom: 0.5rem;
 		font-size: 1rem;
-	}
-
-	ul{
-		padding: 0;
-		padding-left: 1rem;
-		margin: 0;
+		font-weight: normal;
 	}
 
 
@@ -69,7 +64,7 @@
 	text-align: center;
 	margin-top: 1rem;
 	img{
-	    background-color: #447f6a;
+	    background-color: $color-notification-success;
 	    width: 3rem;
 	    height: 3rem;
 	    margin-right: 1rem;

@@ -2013,13 +2013,21 @@ h3 {
 p {
   font-size: 1rem;
   line-height: 1.6;
+  margin-top: 0;
   margin-bottom: 1.5rem; }
+  p.text-center {
+    text-align: center; }
+  p.small {
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem; }
+  p.light {
+    color: #D3D4D8; }
 
 a {
-  color: #4183D7; }
+  color: #4CA879; }
   a:hover, a:focus, a:active {
     text-decoration: underline;
-    color: #4183D7; }
+    color: #4CA879; }
 
 hr {
   border: 0;
@@ -2165,7 +2173,7 @@ table tr:last-child td:last-child {
   transition: box-shadow 0.2s ease, color 0.2s ease, background 0.2s;
   font-size: 0.875rem; }
   .btn:hover:enabled, .btn:focus:enabled {
-    color: #4183D7;
+    color: #4CA879;
     box-shadow: 0 0 4px rgba(211, 212, 216, 0.5);
     outline: 0; }
   .btn:disabled {
@@ -2184,13 +2192,13 @@ table tr:last-child td:last-child {
     /* IE6-9 */ }
   .btn.btn-primary, .btn.btn--primary {
     color: #ffffff;
-    background: #4183D7;
+    background: #4CA879;
     border: 0; }
     .btn.btn-primary:hover:enabled, .btn.btn-primary:focus:enabled, .btn.btn--primary:hover:enabled, .btn.btn--primary:focus:enabled {
-      background-color: #2c75d2;
+      background-color: #44966c;
       color: #ffffff; }
     .btn.btn-primary:active:enabled, .btn.btn--primary:active:enabled {
-      background-color: #235ea8; }
+      background-color: #347353; }
   .btn.btn-cta, .btn .btn--cta {
     background: #E74C3C;
     border: 0;
@@ -2228,7 +2236,7 @@ input[type=text], select {
   border-radius: 2px; }
   input[type=text]:focus, select:focus {
     outline: 0;
-    border-color: #4183D7; }
+    border-color: #4CA879; }
   input[type=text]:hover, select:hover {
     box-shadow: 0 0 2px #D3D4D8; }
 
@@ -2333,10 +2341,10 @@ label {
     border-radius: 50%;
     left: 3px;
     top: 3px;
-    background-color: #4183D7;
+    background-color: #4CA879;
     opacity: 0; }
   .radio-inline input[type="radio"]:checked + label:before, .radio-inline input[type="radio"]:checked + span:before, input[type="radio"]:checked + label:before, input[type="radio"]:checked + span:before {
-    border-color: #4183D7; }
+    border-color: #4CA879; }
   .radio-inline input[type="radio"]:checked + label:after, .radio-inline input[type="radio"]:checked + span:after, input[type="radio"]:checked + label:after, input[type="radio"]:checked + span:after {
     opacity: 1; }
 
@@ -2385,6 +2393,22 @@ label {
     font-weight: bold; }
   .item .item--image img {
     max-width: 150px; }
+
+.cta-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.checked-list {
+  list-style-type: none;
+  line-height: 2;
+  padding: 0;
+  margin: 0; }
+  .checked-list li {
+    background: url("/assets/img/check-green.svg") center left no-repeat;
+    padding-left: 2rem;
+    color: #545D63; }
 
 .badge {
   border: 1px solid #F5F5F5;
@@ -2512,14 +2536,13 @@ label {
   position: relative; }
   .alert--small {
     padding: 1rem;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     border-radius: 0.5rem;
-    padding-left: 5rem;
+    padding-left: 2rem;
     line-height: 1.5; }
   .alert-success, .alert--success {
-    background-color: #E7F5F1;
-    color: #447F6A;
-    padding-left: 6rem; }
+    background-color: #EBF8F5;
+    color: #60BF8B; }
   .alert-info, .alert--info {
     color: #19B5FE;
     background-color: #F1FBFF; }
@@ -2528,7 +2551,7 @@ label {
     position: absolute;
     left: 1.5rem; }
     .alert__icon .check-wrapper {
-      background-color: #447F6A;
+      background-color: #60BF8B;
       width: 3rem;
       height: 3rem;
       margin-right: 1rem;
@@ -2538,11 +2561,8 @@ label {
   .alert__title {
     margin: 0;
     margin-bottom: 0.5rem;
-    font-size: 1rem; }
-  .alert ul {
-    padding: 0;
-    padding-left: 1rem;
-    margin: 0; }
+    font-size: 1rem;
+    font-weight: normal; }
   .alert .alert-heading:last-child {
     margin-bottom: 0; }
 
@@ -2550,7 +2570,7 @@ label {
   text-align: center;
   margin-top: 1rem; }
   .check-wrapper img {
-    background-color: #447f6a;
+    background-color: #60BF8B;
     width: 3rem;
     height: 3rem;
     margin-right: 1rem;

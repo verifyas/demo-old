@@ -46,9 +46,23 @@ h3{
 p{
   font-size: 1rem;
   line-height: 1.6;
+  margin-top :0;
   margin-bottom: 1.5rem;
-}
 
+  &.text-center{
+    text-align: center;
+  }
+
+  &.small{
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &.light{
+    color: $color-typography3;
+  }
+
+}
 a{
   color: $color-primary-base ;
 
