@@ -2113,7 +2113,7 @@ table tr:last-child td:last-child {
   top: 0.5rem; }
 
 .main-header {
-  height: 4rem;
+  height: 5rem;
   box-shadow: 0 1px 2px #e1e1e4;
   margin-bottom: 1rem;
   line-height: 4rem;
@@ -2155,14 +2155,12 @@ table tr:last-child td:last-child {
   text-align: center;
   margin: 0;
   width: 100%;
-  background-color: #F9FAFA;
-  height: 3rem; }
+  background-color: #F9FAFA; }
   .main-footer p {
     font-size: 0.75rem;
     color: #545D63;
     text-align: center;
     margin: 0;
-    line-height: 3rem;
     opacity: 0.4; }
 
 .btn {
