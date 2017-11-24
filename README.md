@@ -1,4 +1,3 @@
-# Verify MVP
 ![Verify](app/assets/img/verify-logo-rect.png "Verify")
 
 Verify is a reputation protocol that tracks the transaction history of participants (buyers, sellers) and unlocks benefits for those with good reputation.
