@@ -1,446 +1,325 @@
 <!doctype html>
 <html class="no-js">
-  <head>
-    <meta charset="utf-8">
-    <title>MVP</title>
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-
-    <link href="//www.google-analytics.com" rel="dns-prefetch">
-    <link href="//ajax.googleapis.com" rel="dns-prefetch">
-    <link href="assets/css/style.min.css" rel="stylesheet">
-
-    <!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600|Playfair+Display" rel="stylesheet">
-
-
-    <script src="assets/components/modernizr/modernizr.js"></script>
-  </head>
-  <body>
-
-  	<!-- Badge -->
-	<div class=badge id="verifyBadge">
-		<div class=badge__title>
-			Bob's Shoe Store
-		</div>
-		<div class=badge__rating>
-			<img src="assets/img/star-on.svg">
-			<img src="assets/img/star-on.svg">
-			<img src="assets/img/star-on.svg">
-			<img src="assets/img/star-on.svg">
-			<img src="assets/img/star-on.svg">
-		</div>
-		<div class=badge__text>
-			from <strong>154</strong> verified reviews
-			<hr>
-			Your purchase is 100% guaranteed. <a href="#">Learn more</a>
-			<hr>
-		</div>
-
-		<div class=badge__verify>
-			<img src="assets/img/powered-by-verify.svg">
-		</div>
-	</div>
-
-	<div class="main-header">
-		<div class="columns">
-			<div class="column">
-				<h1><a href="/">Bob's Shoe Store</a> (Demo store)</h1>
-			</div>
-			<div class="column">
-
-			</div>
-		</div>
-	</div>
-
-    <div class=main>
-
-      <div id=screen-1 class="screen screen1">
-
-        <div class="container">
-
-			<div class="columns">
-
-				<div class="column is-6 item-mobile-only">
-					<div class="item-desc">
-						<h5 class="item-desc__category">Shoes </h5>
-	          			<h2 class="item-desc__title">Nike Air</h2>
-	          			<h4 class="item-desc__price">$250</h4>
-
-					</div>
-				</div>
-
-				<!-- Image Column -->
-				<div class="column is-6">
-					<div class="item-image">
-			            <img src="assets/img/nike.png">
-
-			            <div class="mobile-only">
-
-		          			<p class="item-desc__info">
-								The legend lives on in the Nike Air Force 1 High ’07 Men's Shoe, a modern take on the icon that blends classic style and fresh, crisp details.
-								<table>
-									<tr>
-										<td class="title">
-											Shown
-										</td>
-										<td class="desc">
-											University Red/White/Team Red
-										</td>
-									</tr>
-
-									<tr>
-										<td class="title">
-											Style
-										</td>
-										<td class="desc">
-											315121-610
-										</td>
-									</tr>
-
-								</table>
-		          			</p>
-		          			<div class="item-desc__btn-container">
-						    	<button data-balloon="Click here to get started" data-balloon-pos="up" data-balloon-visible onClick="switchScreen(2);" class="btn btn--primary item-desc__btn">Add to Cart</button>
-							</div>
-						</div>
-					</div>
-				</div>
-
-
-				<!-- Description Column -->
-				<div class="column is-4 item-desktop-only">
-					<div class="item-desc">
-						<h5 class="item-desc__category">Shoes </h5>
-	          			<h2 class="item-desc__title">Nike Air</h2>
-	          			<h4 class="item-desc__price">$250</h4>
-	          			<p class="item-desc__info">
-							The legend lives on in the Nike Air Force 1 High ’07 Men's Shoe, a modern take on the icon that blends classic style and fresh, crisp details.
-							<table>
-								<tr>
-									<td class="title">
-										Shown
-									</td>
-									<td class="desc">
-										University Red/White/Team Red
-									</td>
-								</tr>
-
-								<tr>
-									<td class="title">
-										Style
-									</td>
-									<td class="desc">
-										315121-610
-									</td>
-								</tr>
-
-							</table>
-	          			</p>
-					    <button data-balloon="Click here to get started" data-balloon-pos="right" data-balloon-visible onClick="switchScreen(2);" class="btn btn--primary item-desc__btn">Add to Cart</button>
-					</div>
-				</div>
-
-
-			</div>
-
-		</div>
-
-
-
-
-      </div><!-- #screen-1 -->
-
-      <div id=screen-2 class=screen>
-      	<div class="container">
-
-      		<div class="columns">
-
-				<div class="column is-4">
-			        <h2 class="section-title">Your items</h2>
-			        <div class="item item--cart">
-				          <div class=item__image>
-				            <img src="assets/img/nike.png">
-				          </div>
-				          <div class=item__title>Nike Air</div>
-				          <div class=item__price>$250</div>
-				          <div class="item__condition">- Condition: New</div>
-				    </div>
-
-				</div>
-
-				<div class="column is-6">
-			        <h2 class="section-title">Shipping Details</h2>
-			        <form>
-						<div class="input-wrap">
-							<label for="Email">Email</label>
-							<input type=text placeholder="your@email.com" name="email" id="Email">
-							<p class="input-wrap__error-msg"></p>
-						</div>
-
-						<div class="input-wrap">
-							<label for="address1">Address Line 1</label>
-							<input type=text placeholder="Your Address" name="addressLine1" id="address1">
-							<p class="input-wrap__error-msg"></p>
-						</div>
-
-						<div class="input-wrap">
-							<label for="Address2">Address Line 2</label>
-							<input type=text placeholder="Building, Apartment No" name="addressLine2" id="Address2">
-							<p class="input-wrap__error-msg"></p>
-						</div>
-
-						<div class="input-wrap">
-							<label for="zip">Zip</label>
-							<input type=text placeholder="Zip Code" name="zip" id="zip">
-							<p class="input-wrap__error-msg"></p>
-						</div>
-
-						<div class="input-wrap">
-							<label for="country">Country</label>
-							<input type=text placeholder="Country" value="United States">
-							<p class="input-wrap__error-msg"></p>
-						</div>
-
-			          <button data-balloon="Let's pay with crypto!" data-balloon-pos="right" data-balloon-visible class="btn btn--primary desktop-only" id="verify-pay">Pay with Crypto</button>
-
-			          <button data-balloon="Let's pay with crypto!" data-balloon-pos="up" data-balloon-visible class="btn btn--primary mobile-only btn--block crypto-mobile-button" id="verify-pay-mobile">Pay with Crypto</button>
-
-			          <br><br>
-			          <div class=shipping--powered-by>
-			            <img src="assets/img/powered-by-verify.svg">
-			          </div>
-			        </form>
-				</div>
-
-
-      		</div>
-      	</div>
-
-      </div><!-- #screen-2 -->
-
-    </div><!-- ./main -->
-
-    <footer class="main-footer">
-    	<p class="main-footer__text">
-    		An E-Commerce demo site presenting how Verify works, © all copyrights goes to Verify
-    	</p>
-    </footer>
-
-
-
-	<!-- Modal Screens -->
-	<div class="modal" id="verify-modal">
-	  <div class="modal-background"></div>
-	  <div class="modal-card">
-	    <header class="modal-card-head">
-	        <div class=checkout-header>
-	          <img src="assets/img/verify.svg">
-	        </div>
-	    </header>
-
-
-	    <section class="modal-card-body">
-	        <div class="modal-screen" id="modal-screen-1">
-
-	        	<div class="columns">
-
-	        		<div class="column is-6">
-			          <h2 class="logo-title">Bob's Shoe Store</h2>
-			          <div class=checkout--rating>
-			            <img src="assets/img/star-on.svg">
-			            <img src="assets/img/star-on.svg">
-			            <img src="assets/img/star-on.svg">
-			            <img src="assets/img/star-on.svg">
-			            <img src="assets/img/star-on.svg">
-			            <p class="logo-desc">from <strong>154</strong> reviews</p>
-			          </div>
-			          <hr>
-			          <h5 class="seondary-section-title">Your order details:</h5>
-				        <div class="item item--cart">
-				          <div class=item__image>
-				            <img src="assets/img/nike.png">
-				          </div>
-				          <div class=item__title>Nike Air</div>
-				          <div class=item__price>$250</div>
-				          <div class="item__condition">- Condition: New</div>
-				        </div>
-
-			          <div class=delivery>
-			            <img src="assets/img/delivery.svg">Delivery by <strong>Monday, Dec 20</strong><br>
-			            FREE returns: <strong>Shipper pays</strong> return shipping charges.
-			          </div>
-	        		</div>
-
-	        		<div class="column is-6">
-<!--
-			          <div class="checkout--payment">
-			            <label>Choose Your Currency:</label>
-
-			            <div class="cryptocurrency_payment">
-							<div class="input-wrap input-wrap--radio-big">
-								<input type="radio" id="radio-btc" name="cryptoRadio" checked>
-								<label for="radio-btc">
-									<div class="info">
-										Bitcoin -  Rate: 1 BTC = $7,150
-										<span>0.2 BTC</span>
-
-									</div>
-
-									<div class="image">
-										<img src="assets/img/btc.svg">
-									</div>
-								</label>
-							</div>
-			            </div>
-
-			            <div class="cryptocurrency_payment">
-							<div class="input-wrap input-wrap--radio-big">
-								<input type="radio" id="radio-eth" name="cryptoRadio">
-								<label for="radio-eth">
-									<div class="info">
-										Etherum
-										<span>0.5 ETH</span>
-
-									</div>
-
-									<div class="image">
-										<img src="assets/img/ethereum.svg">
-									</div>
-								</label>
-							</div>
-			            </div>
-
-
-
-			          </div> -->
-
-
-
-			          <div class="alert alert--small alert--success protection">
-			            <h5 class="alert__title"><strong>100% protection</strong> against:</h5>
-			            <ul class="checked-list">
-			              <li>Late delivery</li>
-			              <li>Damaged / defective product</li>
-			              <li>Inaccurately described product</li>
-			              <li>Fake / non-genuine products</li>
-			            </ul>
-			          </div>
-
-
-
-
-	        		</div>
-					<!-- End of RightColumn -->
-
-	        	</div>
-
-
-				<div class="cta-container">
-					<div class="payment-section">
-		            	<button href="#" onClick="switchModalScreen(2)"  data-balloon="Let's pay with Bitcoin, shall we?" data-balloon-pos="up" data-balloon-visible class="btn btn--primary btn--lg">
+
+<head>
+  <meta charset="utf-8">
+  <title>Demo Store | Verify.as</title>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link href="//www.google-analytics.com" rel="dns-prefetch">
+  <link href="//ajax.googleapis.com" rel="dns-prefetch">
+  <link href="assets/css/style.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600|Playfair+Display" rel="stylesheet">
+  <script src="assets/components/modernizr/modernizr.js"></script>
+</head>
+
+<body>
+
+  <!-- Badge -->
+  <div class=badge id="verifyBadge">
+    <div class=badge__title>
+      Bob's Shoe Store
+    </div>
+    <div class=badge__rating>
+      <img src="assets/img/star-on.svg">
+      <img src="assets/img/star-on.svg">
+      <img src="assets/img/star-on.svg">
+      <img src="assets/img/star-on.svg">
+      <img src="assets/img/star-on.svg">
+    </div>
+    <div class=badge__text>
+      from <strong>154</strong> verified reviews
+      <hr> Your purchase is 100% guaranteed. <a href="#">Learn more</a>
+      <hr>
+    </div>
+
+    <div class=badge__verify>
+      <img src="assets/img/powered-by-verify.svg">
+    </div>
+  </div>
+
+  <div class="main-header">
+    <div class="columns">
+      <div class="column">
+        <h1><a href="/">Bob's Shoe Store</a> (Demo store)</h1>
+      </div>
+      <div class="column"></div>
+    </div>
+  </div>
+
+  <div class=main>
+    <div id=screen-1 class="screen screen1">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-6 item-mobile-only">
+            <div class="item-desc">
+              <h5 class="item-desc__category">Shoes </h5>
+              <h2 class="item-desc__title">Nike Air</h2>
+              <h4 class="item-desc__price">$250</h4>
+            </div>
+          </div>
+
+          <!-- Image Column -->
+          <div class="column is-6">
+            <div class="item-image">
+              <img src="assets/img/nike.png">
+              <div class="mobile-only">
+                <p class="item-desc__info">
+                  The legend lives on in the Nike Air Force 1 High ’07 Men's Shoe, a modern take on the icon that blends classic style and fresh, crisp details.
+                  <table>
+                    <tr>
+                      <td class="title">
+                        Shown
+                      </td>
+                      <td class="desc">
+                        University Red/White/Team Red
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="title">
+                        Style
+                      </td>
+                      <td class="desc">
+                        315121-610
+                      </td>
+                    </tr>
+                  </table>
+                </p>
+                <div class="item-desc__btn-container">
+                  <button data-balloon="Click here to get started" data-balloon-pos="up" data-balloon-visible onClick="switchScreen(2);" class="btn btn--primary item-desc__btn">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Description Column -->
+          <div class="column is-4 item-desktop-only">
+            <div class="item-desc">
+              <h5 class="item-desc__category">Shoes </h5>
+              <h2 class="item-desc__title">Nike Air</h2>
+              <h4 class="item-desc__price">$250</h4>
+              <p class="item-desc__info">
+                The legend lives on in the Nike Air Force 1 High ’07 Men's Shoe, a modern take on the icon that blends classic style and fresh, crisp details.
+                <table>
+                  <tr>
+                    <td class="title">
+                      Shown
+                    </td>
+                    <td class="desc">
+                      University Red/White/Team Red
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="title">
+                      Style
+                    </td>
+                    <td class="desc">
+                      315121-610
+                    </td>
+                  </tr>
+                </table>
+              </p>
+              <button data-balloon="Click here to get started" data-balloon-pos="right" data-balloon-visible onClick="switchScreen(2);" class="btn btn--primary item-desc__btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #screen-1 -->
+
+    <div id=screen-2 class=screen>
+      <div class="container">
+        <div class="columns">
+          <div class="column is-4">
+            <h2 class="section-title">Your items</h2>
+            <div class="item item--cart">
+              <div class=item__image>
+                <img src="assets/img/nike.png">
+              </div>
+              <div class=item__title>Nike Air</div>
+              <div class=item__price>$250</div>
+              <div class="item__condition">- Condition: New</div>
+            </div>
+          </div>
+          <div class="column is-6">
+            <h2 class="section-title">Shipping Details</h2>
+            <form>
+              <div class="input-wrap">
+                <label for="Email">Email</label>
+                <input type=text placeholder="your@email.com" name="email" id="Email">
+                <p class="input-wrap__error-msg"></p>
+              </div>
+              <div class="input-wrap">
+                <label for="address1">Address Line 1</label>
+                <input type=text placeholder="Your Address" name="addressLine1" id="address1" value="123 6th St.">
+                <p class="input-wrap__error-msg"></p>
+              </div>
+              <div class="input-wrap">
+                <label for="Address2">Address Line 2</label>
+                <input type=text placeholder="Building, Apartment No" name="addressLine2" id="Address2" value="Unit 2A">
+                <p class="input-wrap__error-msg"></p>
+              </div>
+              <div class="input-wrap">
+                <label for="zip">Zip</label>
+                <input type=text placeholder="Zip Code" name="zip" id="zip" value="32904">
+                <p class="input-wrap__error-msg"></p>
+              </div>
+              <div class="input-wrap">
+                <label for="country">Country</label>
+                <input type=text placeholder="Country" value="United States">
+                <p class="input-wrap__error-msg"></p>
+              </div>
+              <button data-balloon="Let's pay with crypto!" data-balloon-pos="right" data-balloon-visible class="btn btn--primary desktop-only" id="verify-pay">Pay with Crypto</button>
+              <button data-balloon="Let's pay with crypto!" data-balloon-pos="up" data-balloon-visible class="btn btn--primary mobile-only btn--block crypto-mobile-button" id="verify-pay-mobile">Pay with Crypto</button>
+              <br><br>
+              <div class=shipping--powered-by>
+                <img src="assets/img/powered-by-verify.svg">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #screen-2 -->
+
+  </div>
+  <!-- ./main -->
+
+  <footer class="main-footer">
+    <p class="main-footer__text">
+      An E-Commerce demo site presenting how Verify works. &copy; Copyright, Verify Pte Ltd 2017
+    </p>
+  </footer>
+
+  <!-- Modal Screens -->
+  <div class="modal" id="verify-modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <div class=checkout-header>
+          <img src="assets/img/verify.svg">
+        </div>
+      </header>
+
+      <section class="modal-card-body">
+        <div class="modal-screen" id="modal-screen-1">
+          <div class="columns">
+            <div class="column is-6">
+              <h2 class="logo-title">Bob's Shoe Store</h2>
+              <div class=checkout--rating>
+                <img src="assets/img/star-on.svg">
+                <img src="assets/img/star-on.svg">
+                <img src="assets/img/star-on.svg">
+                <img src="assets/img/star-on.svg">
+                <img src="assets/img/star-on.svg">
+                <p class="logo-desc">from <strong>154</strong> reviews</p>
+              </div>
+              <hr>
+              <h5 class="seondary-section-title">Your order details:</h5>
+              <div class="item item--cart">
+                <div class=item__image>
+                  <img src="assets/img/nike.png">
+                </div>
+                <div class=item__title>Nike Air</div>
+                <div class=item__price>$250</div>
+                <div class="item__condition">- Condition: New</div>
+              </div>
+
+              <div class=delivery>
+                <img src="assets/img/delivery.svg">Delivery by <strong>Monday, Dec 20</strong><br> FREE returns: <strong>Shipper pays</strong> return shipping charges.
+              </div>
+            </div>
+
+            <div class="column is-6">
+              <div class="alert alert--small alert--success protection">
+                <h5 class="alert__title"><strong>100% protection</strong> against:</h5>
+                <ul class="checked-list">
+                  <li>Late delivery</li>
+                  <li>Damaged / defective product</li>
+                  <li>Inaccurately described product</li>
+                  <li>Fake / non-genuine products</li>
+                </ul>
+              </div>
+            </div>
+            <!-- End of RightColumn -->
+          </div>
+
+          <div class="cta-container">
+            <div class="payment-section">
+              <button href="#" onClick="switchModalScreen(2)" data-balloon="Let's pay with Bitcoin, shall we?" data-balloon-pos="up" data-balloon-visible class="btn btn--primary btn--lg">
 		              	Pay 0.05 BTC
 		            	</button>
-		            	<p class="small text-center">at 1BTC = $7,150</p>
-		            </div>
+              <p class="small text-center">at 1BTC = $7,150</p>
+            </div>
+          </div>
 
+          <p class="text-center light small">
+            Usage of the Verify payments services implies acceptance of our Terms and Conditions and Privacy Policy
+          </p>
+        </div>
 
-				</div>
-
-				<p class="text-center light small">
-					Usage of the Verify payments services implies acceptance of our Terms and Conditions and Privacy Policy
-				</p>
-
-
-	        </div>
-
-
-	        <!-- Screen 2 -->
-	        <div class="bitcoin-payment modal-screen" id="modal-screen-2">
-		      		<div class="columns">
-		      			<div class="column is-12">
-
-		        		<h2 class="section-title text-center">This purchase is 100% protected</h2>
-		        			<p class="small bitcoin-payment__status text-center">You are paying with <img src="assets/img/btc.svg" alt="Bitcoin"><strong>Bitcoin</strong> <a href="#">(Change)</a>
-		        			</p>
-		        		<hr>
-
-		        		<div class="columns is-centered">
-		        			<div class="column is-12 bitcoin-payment__qr-code">
-			        			<p>
-			        				Transfer <strong>0.2 BTC</strong> to:<br>
-			        				Rate: 1 BTC = $7,150
-
-			        			</p>
-				        		<img src="assets/img/qr-code.svg">
-
-		        			</div>
-		        		</div>
-
-		        		<hr>
-
-		        		<p class="text-center m-b-0"> <a data-balloon="For demo purposes, we'll automatically redirect to success page in 5 seconds" data-balloon-pos="up" data-balloon-visible onClick="return switchModalScreen(3);">
+        <!-- Screen 2 -->
+        <div class="bitcoin-payment modal-screen" id="modal-screen-2">
+          <div class="columns">
+            <div class="column is-12">
+              <h2 class="section-title text-center">This purchase is 100% protected</h2>
+              <p class="small bitcoin-payment__status text-center">You are paying with <img src="assets/img/btc.svg" alt="Bitcoin"><strong>Bitcoin</strong> <a href="#">(Change)</a>
+              </p>
+              <hr>
+              <div class="columns is-centered">
+                <div class="column is-12 bitcoin-payment__qr-code">
+                  <p>
+                    Transfer <strong>0.2 BTC</strong> to:<br> Rate: 1 BTC = $7,150
+                  </p>
+                  <img src="assets/img/qr-code.svg">
+                </div>
+              </div>
+              <hr>
+              <p class="text-center m-b-0"> <a data-balloon="For demo purposes, we'll automatically redirect to success page in 5 seconds" data-balloon-pos="up" data-balloon-visible onClick="return switchModalScreen(3);">
 		          		Status: Waiting for payment&hellip;
 		        		</a>
-		        		</p>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Screen2ModalEnds -->
 
-		      			</div>
-		      		</div>
-	      	</div>
-			<!-- Screen2ModalEnds -->
+        <!-- ModalScreen 3 -->
+        <div class="checkout-complete modal-screen" id=modal-screen-3>
+          <div class="columns">
+            <div class="column">
+              <div class="check-wrapper">
+                <img src="assets/img/check.svg" alt="">
+                <h2 class="section-title">Payment Complete</h2>
+              </div>
+              <p>We've sent a confirmation email to <strong>your@email.com</strong> with your order details and a link to your order tracking page.<br> Please keep this email. You will need it if you need to inquire about the order status, or to file a dispute
+              </p>
+              <hr>
+              <h4 class="seondary-section-title">Order Summary </h4>
+              <div class="item item--cart">
+                <div class=item__image>
+                  <img src="assets/img/nike.png">
+                </div>
+                <div class=item__title>Nike Air</div>
+                <div class=item__price>$250</div>
+                <div class="item__condition">- Condition: New</div>
+              </div>
+              <div class=shipping--powered-by>
+                <img src="assets/img/powered-by-verify.svg">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ModalSceen 3 Ends -->
+      </section>
 
-
-			<!-- ModalScreen 3 -->
-
-	      	<div class="checkout-complete modal-screen" id=modal-screen-3 >
-
-		      		<div class="columns">
-
-		      			<div class="column">
-					        		<div class="check-wrapper">
-					        			<img src="assets/img/check.svg" alt="">
-					        			<h2 class="section-title">Payment Complete</h2>
-					        		</div>
-
-
-						       <p>We've sent a confirmation email to <strong>your@email.com</strong> with your order details and a link to your 	order tracking page.<br>
-						        Please keep this email. You will need it if you need to inquire about the order status, or to file a dispute
-						    	</p>
-							<hr>
-						    <h4 class="seondary-section-title">Order Summary </h4>
-					        <div class="item item--cart">
-					          <div class=item__image>
-					            <img src="assets/img/nike.png">
-					          </div>
-					          <div class=item__title>Nike Air</div>
-					          <div class=item__price>$250</div>
-					          <div class="item__condition">- Condition: New</div>
-					        </div>
-					        <div class=shipping--powered-by>
-					          <img src="assets/img/powered-by-verify.svg">
-					        </div>
-		      			</div>
-
-
-	      			</div>
-
-
-	      </div>
-
-	      <!-- ModalSceen 3 Ends -->
-
-	    </section>
-
-	  <button class="modal-close is-large" aria-label="close" id="close-modal"></button>
-
-	  </div>
-	</div>
-
-
-    <script src="assets/components/jquery/jquery.min.js"></script>
-    <script src="assets/js/scripts.min.js"></script>
-
-  </body>
+      <button class="modal-close is-large" aria-label="close" id="close-modal"></button>
+    </div>
+  </div>
+  <script src="assets/components/jquery/jquery.min.js"></script>
+  <script src="assets/js/scripts.min.js"></script>
+</body>
 </html>
