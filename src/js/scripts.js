@@ -42,4 +42,9 @@
   $('#Email').change(function(e){
     $('.email-field').text( e.currentTarget.value );
   });
+
+  $('#complete-demo').click(function(e){
+    $("#verify-modal").removeClass("is-active");
+    window.switchScreen(3);
+  });
 })(jQuery, window, document);
