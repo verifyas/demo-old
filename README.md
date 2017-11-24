@@ -4,9 +4,23 @@
 Verify is a reputation protocol that tracks the transaction history of participants (buyers, sellers) and unlocks benefits for those with good reputation.
 
 ## Introduction
-This is the MVP for Verify
+
+A key factor in assessing the strength of a product offering is determining if a team is able to execute on the project under consideration. No matter how well thought-out an idea may be, without the operational ability to execute on the plan the project stands little chance of success.
+
+A core facet of the Verify Payments solution is the checkout page. Until we provide sellers with a Checkout page that they can integrate, no buyer will be able to complete a single transaction. Therefore, the focus at the early MVP development phase was to create this checkout page to demonstrate the Improved Checkout experience described in [Section 4.1.1 of our whitepaper](https://verify.as/files/whitepaper.pdf).
+
+By the time of this writing, we developed and deployed an early version of this demo checkout experience at https://verify.as/demo. We encourage readers to browse through to the demo site and try out the checkout experience for themselves!
+
+A screenshot of the checkout page is included below for reference:
+![Verify Checkout page](/app/assets/img/screen@2x.png)
+
+The decision to use a hosted checkout page (which overlays a modal dialog over the seller’s website) enables us to make continuous updates to the embedded script to optimize the checkout flow, or improve conversion without the need for sellers to make any changes on their websites. This means we can deploy changes to Verify Payments instantly to all our sellers, anywhere in the world.
+
 
 ## Setup Instructions
+
+In order to run this project locally, make sure you have NodeJS installed, and run the below commands:
+
 ```bash
 npm install
 gulp
