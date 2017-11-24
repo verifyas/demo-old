@@ -7,7 +7,6 @@
  * Copyright 2017. MIT licensed.
  */
 (function ($, window, document, undefined) {
-
   'use strict';
 
   $(function () {
@@ -23,14 +22,11 @@
       // Remove Badge Block from checkout screens
       if(currentScreen >= 3 ){
         $('#verifyBadge').fadeOut();
-      }          
+      }
     });
-
-
 
     return false; /* prevent form submissions */
   }
-
 
   window.switchModalScreen = function(n) {
     $('#modal-screen-' + currentModalScreen).fadeOut(function(){
@@ -38,11 +34,8 @@
       currentModalScreen = n;
     });
 
-
-
     return false; /* prevent form submissions */
   }
-
 
   $("#close-modal").on("click" , function (){
     $("#verify-modal").removeClass("is-active");
@@ -54,5 +47,7 @@
     return false;
   })
 
-
+  $('#Email').change(function(e){
+    $('.email-field').text( e.currentTarget.value );
+  });
 })(jQuery, window, document);
