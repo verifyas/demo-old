@@ -2,8 +2,9 @@
 ![Verify](app/assets/img/verify-logo-rect.png "Verify")
 
 Verify is a reputation protocol that tracks the transaction history of participants (buyers, sellers) and unlocks benefits for those with good reputation.
+
 ## Introduction
-This is the MVP for Verify 
+This is the MVP for Verify
 
 ## Setup Instructions
 ```bash
@@ -11,7 +12,9 @@ npm install
 gulp
 ```
 ## Purpose of MVP
-Audience: general users with some limited blockchain experience that are looking to invest. Some may be technical, others not technical at all.
+The purpose of this demo is to help sellers, and general users alike, to understand how the Verify solution differs from traditional payment solutions &mdash; and how the checkout experience may look like.
+
+This demo is illustrative, and will of course change with time, to optimize for conversion and usability. However, it's primary purpose is to demonstrate the checkout experience.
 
 ## License
 MIT License
