@@ -24,10 +24,11 @@ In order to run this project locally, make sure you have NodeJS installed, and r
 npm install
 gulp
 ```
+
 ## Purpose of MVP
 The purpose of this demo is to help sellers, and general users alike, to understand how the Verify solution differs from traditional payment solutions &mdash; and how the checkout experience may look like.
 
-This demo is illustrative, and will of course change with time, to optimize for conversion and usability. However, it's primary purpose is to demonstrate the checkout experience.
+This demo is **illustrative**, and will of course change with time, to optimize for conversion and usability. However, it's primary purpose is to demonstrate the checkout experience. Using a light demo, we're able to show this to early sellers and quickly make modifications to illustrate different checkout experiences. This means we only build out the full-fledged version once we're certain we've found a checkout experience that sellers love.
 
 ## MIT License
 

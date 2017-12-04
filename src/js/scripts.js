@@ -1,18 +1,18 @@
-(function ($, window, document, undefined) {
+(function($, window, document, undefined) {
   'use strict';
 
-  $(function () {
+  $(function() {
     // FastShell
     window.currentScreen = 1;
     window.currentModalScreen = 1;
   });
 
   window.switchScreen = function(n) {
-    $('#screen-' + currentScreen).fadeOut(function(){
+    $('#screen-' + currentScreen).fadeOut(function() {
       $('#screen-' + n).fadeIn();
       currentScreen = n;
       // Remove Badge Block from checkout screens
-      if(currentScreen >= 3 ){
+      if (currentScreen >= 3) {
         $('#verifyBadge').fadeOut();
       }
     });
@@ -21,7 +21,7 @@
   }
 
   window.switchModalScreen = function(n) {
-    $('#modal-screen-' + currentModalScreen).fadeOut(function(){
+    $('#modal-screen-' + currentModalScreen).fadeOut(function() {
       $('#modal-screen-' + n).fadeIn();
       currentModalScreen = n;
     });
@@ -29,21 +29,21 @@
     return false; /* prevent form submissions */
   }
 
-  $("#close-modal").on("click" , function (){
+  $("#close-modal").on("click", function() {
     $("#verify-modal").removeClass("is-active");
     return false;
   });
 
-  $("#verify-pay, #verify-pay-mobile").on("click", function (){
+  $("#verify-pay, #verify-pay-mobile").on("click", function() {
     $("#verify-modal").addClass("is-active");
     return false;
   })
 
-  $('#Email').change(function(e){
-    $('.email-field').text( e.currentTarget.value );
+  $('#Email').change(function(e) {
+    $('.email-field').text(e.currentTarget.value);
   });
 
-  $('#complete-demo').click(function(e){
+  $('#complete-demo').click(function(e) {
     $("#verify-modal").removeClass("is-active");
     window.switchScreen(3);
   });
