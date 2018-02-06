@@ -1,5 +1,7 @@
 ![Verify](app/assets/img/verify-logo-rect.png "Verify")
 
+> **Update:** Following [our recent announcement](https://medium.com/verifyas/the-verify-master-plan-part-1-839083d1447b), we will be pushing updates to the demo and our various plugins to include support for fiat payments. Expect details in our upcoming alpha release!
+
 Verify is a reputation protocol that tracks the transaction history of participants (buyers, sellers) and unlocks benefits for those with good reputation.
 
 ## Introduction
