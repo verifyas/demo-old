@@ -11,7 +11,6 @@ var gulp = require('gulp'),
   sourcemaps = require('gulp-sourcemaps'),
   package = require('./package.json');
 
-
 var banner = [
   '/*!\n' +
   ' * <%= package.name %>\n' +
